@@ -1,0 +1,4 @@
+# pecount (perf_event_open; HW events user-space only), 1 run(s)
+
+2703587,,duration_time,0.00,,100.00
+<not supported>,,task-clock,,,

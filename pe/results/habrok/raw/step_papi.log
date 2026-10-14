@@ -1,0 +1,3 @@
+no bfs_papi
+alu iterations 500000000 time_s 0.586675 ns_per_iter 1.173 result 2446141755042983169
+chase size_kb 1048576 steps 10000000 ns_per_load 100.27 (end 0x7fb500d1f980)

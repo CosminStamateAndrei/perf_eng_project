@@ -1,0 +1,25 @@
+  O4-pf2 [all, 128 thr, sched=default] median 3.22 ms/trial
+pe/scripts/batch_all.sh: line 49: perf: command not found
+pe/scripts/batch_all.sh: line 49: perf: command not found
+pe/scripts/batch_all.sh: line 49: perf: command not found
+pe/scripts/batch_all.sh: line 49: perf: command not found
+  O4-pf4 [all, 128 thr, sched=default] median 2.68 ms/trial
+pe/scripts/batch_all.sh: line 49: perf: command not found
+pe/scripts/batch_all.sh: line 49: perf: command not found
+pe/scripts/batch_all.sh: line 49: perf: command not found
+pe/scripts/batch_all.sh: line 49: perf: command not found
+  O4-pf8 [all, 128 thr, sched=default] median 3.12 ms/trial
+pe/scripts/batch_all.sh: line 49: perf: command not found
+pe/scripts/batch_all.sh: line 49: perf: command not found
+pe/scripts/batch_all.sh: line 49: perf: command not found
+pe/scripts/batch_all.sh: line 49: perf: command not found
+  O4-pf16 [all, 128 thr, sched=default] median 2.53 ms/trial
+pe/scripts/batch_all.sh: line 49: perf: command not found
+pe/scripts/batch_all.sh: line 49: perf: command not found
+pe/scripts/batch_all.sh: line 49: perf: command not found
+pe/scripts/batch_all.sh: line 49: perf: command not found
+  O4-pf32 [all, 128 thr, sched=default] median 2.54 ms/trial
+pe/scripts/batch_all.sh: line 49: perf: command not found
+pe/scripts/batch_all.sh: line 49: perf: command not found
+pe/scripts/batch_all.sh: line 49: perf: command not found
+pe/scripts/batch_all.sh: line 49: perf: command not found

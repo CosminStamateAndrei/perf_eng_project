@@ -1,0 +1,28 @@
+## alu 500000000
+alu iterations 500000000 time_s 0.576631 ns_per_iter 1.153 result 2446141755042983169
+# pecount (perf_event_open; HW events user-space only), 1 run(s)
+
+2506825311,,instructions,0.00,,25.98
+2007275016,,cycles,0.00,,25.98
+## alu 1000000000
+alu iterations 1000000000 time_s 1.151676 ns_per_iter 1.152 result 13621014012951058945
+# pecount (perf_event_open; HW events user-space only), 1 run(s)
+
+5000215185,,instructions,0.00,,25.99
+4002233560,,cycles,0.00,,25.99
+## chase 1048576KB 10000000
+chase size_kb 1048576 steps 10000000 ns_per_load 99.74 (end 0x7f0468a2b980)
+# pecount (perf_event_open; HW events user-space only), 1 run(s)
+
+41587665,,cache-misses,0.00,,25.03
+<not supported>,,LLC-load-misses,,,
+8132,,dTLB-load-misses,0.00,,25.01
+62495473,,L1-dcache-load-misses,0.00,,24.98
+## chase 1048576KB 20000000
+chase size_kb 1048576 steps 20000000 ns_per_load 99.49 (end 0x7f1eea744c40)
+# pecount (perf_event_open; HW events user-space only), 1 run(s)
+
+65969301,,cache-misses,0.00,,14.49
+<not supported>,,LLC-load-misses,,,
+13544,,dTLB-load-misses,0.00,,14.50
+105883279,,L1-dcache-load-misses,0.00,,14.50

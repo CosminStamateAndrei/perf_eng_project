@@ -1,0 +1,6 @@
+# pecount (perf_event_open; HW events user-space only), 5 run(s)
+
+46947620,,L1-dcache-loads,32.93,,60.02
+214658,,L1-dcache-load-misses,70.59,,55.47
+6505,,dTLB-loads,44.92,,50.25
+4473,,dTLB-load-misses,34.02,,42.85

@@ -1,0 +1,9 @@
+  AB-a5b9 [all, 128 thr, sched=default] median 2.76 ms/trial
+  AB-a5b18 [all, 128 thr, sched=default] median 2.87 ms/trial
+  AB-a5b36 [all, 128 thr, sched=default] median 2.87 ms/trial
+  AB-a15b9 [all, 128 thr, sched=default] median 2.39 ms/trial
+  AB-a15b18 [all, 128 thr, sched=default] median 2.91 ms/trial
+  AB-a15b36 [all, 128 thr, sched=default] median 2.99 ms/trial
+  AB-a30b9 [all, 128 thr, sched=default] median 3.29 ms/trial
+  AB-a30b18 [all, 128 thr, sched=default] median 2.96 ms/trial
+  AB-a30b36 [all, 128 thr, sched=default] median 3.18 ms/trial

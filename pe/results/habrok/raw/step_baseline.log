@@ -1,0 +1,3 @@
+  base [all, 128 thr, sched=default] median 2.81 ms/trial
+  base-1-per-core [all, 128 thr, sched=default] median 3.76 ms/trial
+  base-warmup [all, 128 thr, sched=default] median 3.90 ms/trial

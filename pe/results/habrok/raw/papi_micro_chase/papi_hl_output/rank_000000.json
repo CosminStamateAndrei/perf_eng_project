@@ -1,0 +1,25 @@
+{
+  "papi_version":"7.1.0.0",
+  "cpu_info":"AMD EPYC 7763 64-Core Processor",
+  "max_cpu_rate_mhz":"3530",
+  "min_cpu_rate_mhz":"1500",
+  "event_definitions":{
+    "perf::PERF_COUNT_HW_CACHE_MISSES":{
+      "component":"perf_event",
+      "type":"delta"
+    }
+  },
+  "threads":{
+    "0":{
+      "regions":{
+        "0":{
+          "name":"micro",
+          "parent_region_id":"-1",
+          "cycles":"2445230340",
+          "real_time_nsec":"999933464",
+          "perf::PERF_COUNT_HW_CACHE_MISSES":"10007236"
+        }
+      }
+    }
+  }
+}

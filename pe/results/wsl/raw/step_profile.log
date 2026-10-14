@@ -1,0 +1,8 @@
+[ perf record: Woken up 11 times to write data ]
+[ perf record: Captured and wrote 3.985 MB /root/gapbs/pe/results/wsl/raw/perf.data (46009 samples) ]
+[ perf record: Woken up 14 times to write data ]
+Warning:
+1 out of order events recorded.
+[ perf record: Captured and wrote 4.230 MB /root/gapbs/pe/results/wsl/raw/perf_P.data (47601 samples) ]
+Warning:
+1 out of order events recorded.

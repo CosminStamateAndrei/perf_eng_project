@@ -1,0 +1,15 @@
+  O2-sched [all, 10 thr, sched=static,64] median 11.24 ms/trial
+  O2-sched [P, 10 thr, sched=static,64] median 11.45 ms/trial
+  O2-sched [all, 10 thr, sched=static,1024] median 22.19 ms/trial
+  O2-sched [P, 10 thr, sched=static,1024] median 11.31 ms/trial
+  O2-sched [all, 10 thr, sched=dynamic,64] median 12.64 ms/trial
+  O2-sched [P, 10 thr, sched=dynamic,64] median 12.50 ms/trial
+  O2-sched [all, 10 thr, sched=dynamic,256] median 10.34 ms/trial
+  O2-sched [P, 10 thr, sched=dynamic,256] median 9.70 ms/trial
+  O2-sched [all, 10 thr, sched=dynamic,1024] median 11.11 ms/trial
+  O2-sched [P, 10 thr, sched=dynamic,1024] median 12.80 ms/trial
+  O2-sched [all, 10 thr, sched=dynamic,4096] median 17.51 ms/trial
+  O2-sched [P, 10 thr, sched=dynamic,4096] median 12.49 ms/trial
+  O2-bind-close [all, 10 thr, sched=default] median 9.26 ms/trial
+  O2-bind-spread [all, 10 thr, sched=default] median 9.43 ms/trial
+  O2-1-per-core [all, 10 thr, sched=default] median 8.59 ms/trial

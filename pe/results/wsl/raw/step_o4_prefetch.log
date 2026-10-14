@@ -1,0 +1,65 @@
+  O4-pf2 [all, 10 thr, sched=default] median 8.22 ms/trial
+Error:
+No supported events found.
+The cycles event is not supported.
+Error:
+No supported events found.
+The cycles event is not supported.
+Error:
+No supported events found.
+The cache-references event is not supported.
+Error:
+No supported events found.
+The cache-references event is not supported.
+  O4-pf4 [all, 10 thr, sched=default] median 7.98 ms/trial
+Error:
+No supported events found.
+The cycles event is not supported.
+Error:
+No supported events found.
+The cycles event is not supported.
+Error:
+No supported events found.
+The cache-references event is not supported.
+Error:
+No supported events found.
+The cache-references event is not supported.
+  O4-pf8 [all, 10 thr, sched=default] median 8.95 ms/trial
+Error:
+No supported events found.
+The cycles event is not supported.
+Error:
+No supported events found.
+The cycles event is not supported.
+Error:
+No supported events found.
+The cache-references event is not supported.
+Error:
+No supported events found.
+The cache-references event is not supported.
+  O4-pf16 [all, 10 thr, sched=default] median 8.04 ms/trial
+Error:
+No supported events found.
+The cycles event is not supported.
+Error:
+No supported events found.
+The cycles event is not supported.
+Error:
+No supported events found.
+The cache-references event is not supported.
+Error:
+No supported events found.
+The cache-references event is not supported.
+  O4-pf32 [all, 10 thr, sched=default] median 8.23 ms/trial
+Error:
+No supported events found.
+The cycles event is not supported.
+Error:
+No supported events found.
+The cycles event is not supported.
+Error:
+No supported events found.
+The cache-references event is not supported.
+Error:
+No supported events found.
+The cache-references event is not supported.

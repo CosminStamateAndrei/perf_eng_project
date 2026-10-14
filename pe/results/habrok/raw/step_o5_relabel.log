@@ -1,0 +1,5 @@
+  O5-relabel [all, 128 thr, sched=default] median 2.58 ms/trial
+pe/scripts/batch_all.sh: line 49: perf: command not found
+pe/scripts/batch_all.sh: line 49: perf: command not found
+pe/scripts/batch_all.sh: line 49: perf: command not found
+pe/scripts/batch_all.sh: line 49: perf: command not found

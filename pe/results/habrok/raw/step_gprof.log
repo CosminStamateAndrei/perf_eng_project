@@ -1,0 +1,1 @@
+  gprof-instrumented [all, 128 thr, sched=default] median 3.73 ms/trial

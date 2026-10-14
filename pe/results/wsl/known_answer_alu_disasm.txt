@@ -1,0 +1,41 @@
+0000000000001440 <do_alu>:
+    1440:	push   %rbp
+    1441:	mov    %rdi,%rbp
+    1444:	push   %rbx
+    1445:	sub    $0x18,%rsp
+    1449:	call   13e0 <now>
+    144e:	movsd  %xmm0,0x8(%rsp)
+    1454:	test   %rbp,%rbp
+    1457:	jle    14d1 <do_alu+0x91>
+    1459:	xor    %eax,%eax
+    145b:	mov    $0x1,%ebx
+    1460:	movabs $0x5851f42d4c957f2d,%rcx
+    146a:	movabs $0x14057b7ef767814f,%rdx
+    1474:	nopl   0x0(%rax)
+    1478:	imul   %rcx,%rbx
+    147c:	add    %rdx,%rbx
+    147f:	add    $0x1,%rax
+    1483:	cmp    %rax,%rbp
+    1486:	jne    1478 <do_alu+0x38>
+    1488:	call   13e0 <now>
+    148d:	pxor   %xmm2,%xmm2
+    1491:	mov    %rbx,%rcx
+    1494:	mov    %rbp,%rdx
+    1497:	cvtsi2sd %rbp,%xmm2
+    149c:	subsd  0x8(%rsp),%xmm0
+    14a2:	mov    $0x2,%edi
+    14a7:	mov    $0x2,%eax
+    14ac:	lea    0xb55(%rip),%rsi        # 2008 <_IO_stdin_used+0x8>
+    14b3:	movapd %xmm0,%xmm1
+    14b7:	divsd  %xmm2,%xmm1
+    14bb:	mulsd  0xcd5(%rip),%xmm1        # 2198 <_IO_stdin_used+0x198>
+    14c3:	call   1170 <__printf_chk@plt>
+    14c8:	add    $0x18,%rsp
+    14cc:	xor    %eax,%eax
+    14ce:	pop    %rbx
+    14cf:	pop    %rbp
+    14d0:	ret
+    14d1:	mov    $0x1,%ebx
+    14d6:	jmp    1488 <do_alu+0x48>
+    14d8:	nopl   0x0(%rax,%rax,1)
+

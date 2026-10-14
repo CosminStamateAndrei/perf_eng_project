@@ -1,0 +1,32 @@
+always madvise [never]
+  O3-thp-never [all, 10 thr, sched=default] median 9.88 ms/trial
+Error:
+No supported events found.
+The L1-dcache-loads event is not supported.
+Error:
+No supported events found.
+The L1-dcache-loads event is not supported.
+always [madvise] never
+  O3-thp-madvise-base [all, 10 thr, sched=default] median 11.66 ms/trial
+Error:
+No supported events found.
+The L1-dcache-loads event is not supported.
+Error:
+No supported events found.
+The L1-dcache-loads event is not supported.
+  O3-thp-madvise-huge [all, 10 thr, sched=default] median 10.72 ms/trial
+Error:
+No supported events found.
+The L1-dcache-loads event is not supported.
+Error:
+No supported events found.
+The L1-dcache-loads event is not supported.
+[always] madvise never
+  O3-thp-always [all, 10 thr, sched=default] median 8.15 ms/trial
+Error:
+No supported events found.
+The L1-dcache-loads event is not supported.
+Error:
+No supported events found.
+The L1-dcache-loads event is not supported.
+always [madvise] never

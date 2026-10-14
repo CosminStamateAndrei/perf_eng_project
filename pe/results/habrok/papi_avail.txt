@@ -1,0 +1,56 @@
+Available PAPI preset and user defined events plus hardware information.
+--------------------------------------------------------------------------------
+PAPI version             : 7.1.0.0
+Operating system         : Linux 5.14.0-687.46.1.el9_8.x86_64
+Vendor string and code   : AuthenticAMD (2, 0x2)
+Model string and code    : AMD EPYC 7763 64-Core Processor (1, 0x1)
+CPU revision             : 1.000000
+CPUID                    : Family/Model/Stepping 25/1/1, 0x19/0x01/0x01
+CPU Max MHz              : 3530
+CPU Min MHz              : 1500
+Total cores              : 128
+SMT threads per core     : 1
+Cores per socket         : 64
+Sockets                  : 2
+Cores per NUMA region    : 64
+NUMA regions             : 2
+Running in a VM          : no
+Number Hardware Counters : 5
+Max Multiplex Counters   : 384
+Fast counter read (rdpmc): yes
+--------------------------------------------------------------------------------
+
+================================================================================
+  PAPI Preset Events
+================================================================================
+    Name        Code    Deriv Description (Note)
+PAPI_L1_DCM  0x80000000  No   Level 1 data cache misses
+PAPI_L2_DCM  0x80000002  No   Level 2 data cache misses
+PAPI_L2_ICM  0x80000003  No   Level 2 instruction cache misses
+PAPI_TLB_DM  0x80000014  No   Data translation lookaside buffer misses
+PAPI_TLB_IM  0x80000015  Yes  Instruction translation lookaside buffer misses
+PAPI_BR_UCN  0x8000002a  Yes  Unconditional branch instructions
+PAPI_BR_CN   0x8000002b  No   Conditional branch instructions
+PAPI_BR_TKN  0x8000002c  Yes  Conditional branch instructions taken
+PAPI_BR_NTK  0x8000002d  Yes  Conditional branch instructions not taken
+PAPI_BR_MSP  0x8000002e  No   Conditional branch instructions mispredicted
+PAPI_BR_PRC  0x8000002f  Yes  Conditional branch instructions correctly predicted
+PAPI_TOT_INS 0x80000032  No   Instructions completed
+PAPI_FP_INS  0x80000034  No   Floating point instructions
+PAPI_BR_INS  0x80000037  No   Branch instructions
+PAPI_VEC_INS 0x80000038  No   Vector/SIMD instructions (could include integer)
+PAPI_TOT_CYC 0x8000003b  No   Total cycles
+PAPI_L2_DCH  0x8000003f  No   Level 2 data cache hits
+PAPI_L1_DCA  0x80000040  No   Level 1 data cache accesses
+PAPI_L2_DCR  0x80000044  No   Level 2 data cache reads
+PAPI_L2_ICH  0x8000004a  No   Level 2 instruction cache hits
+PAPI_L2_ICA  0x8000004d  No   Level 2 instruction cache accesses
+PAPI_L2_ICR  0x80000050  No   Level 2 instruction cache reads
+PAPI_FML_INS 0x80000061  No   Floating point multiply instructions
+PAPI_FAD_INS 0x80000062  No   Floating point add instructions
+PAPI_FDV_INS 0x80000063  No   Floating point divide instructions
+PAPI_FSQ_INS 0x80000064  No   Floating point square root instructions
+PAPI_FP_OPS  0x80000066  No   Floating point operations
+--------------------------------------------------------------------------------
+Of 27 available events, 5 are derived.
+

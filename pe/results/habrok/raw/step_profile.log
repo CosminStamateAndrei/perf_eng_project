@@ -1,0 +1,7 @@
+pe/scripts/batch_all.sh: line 163: perf: command not found
+pe/scripts/batch_all.sh: line 164: perf: command not found
+pe/scripts/batch_all.sh: line 165: perf: command not found
+pe/scripts/batch_all.sh: line 166: perf: command not found
+pe/scripts/batch_all.sh: line 167: perf: command not found
+taskset: failed to execute perf: No such file or directory
+pe/scripts/batch_all.sh: line 171: perf: command not found

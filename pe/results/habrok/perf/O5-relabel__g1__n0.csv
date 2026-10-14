@@ -1,0 +1,6 @@
+# pecount (perf_event_open; HW events user-space only), 5 run(s)
+
+63759209,,cache-references,30.21,,29.01
+27617509,,cache-misses,41.99,,29.18
+<not supported>,,LLC-loads,,,
+<not supported>,,LLC-load-misses,,,

@@ -1,0 +1,3 @@
+system THP mode: always
+always/base: THP Rss:              144400 kB THP AnonHugePages:    129024 kB 
+always/huge: THP Rss:              142652 kB THP AnonHugePages:    126976 kB 

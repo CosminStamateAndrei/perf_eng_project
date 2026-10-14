@@ -1,0 +1,25 @@
+Generate Time:       1.85416
+Build Time:          2.94414
+Graph has 4194302 nodes and 64155725 undirected edges for degree: 15
+  big22-base [all, 10 thr, sched=default] median 71.09 ms/trial
+  big22-huge [all, 10 thr, sched=default] median 54.09 ms/trial
+  big22-pf8 [all, 10 thr, sched=default] median 57.09 ms/trial
+  big22-relabel [all, 10 thr, sched=default] median 24.77 ms/trial
+Error:
+No supported events found.
+The cycles event is not supported.
+Error:
+No supported events found.
+The cycles event is not supported.
+Error:
+No supported events found.
+The cache-references event is not supported.
+Error:
+No supported events found.
+The cache-references event is not supported.
+Error:
+No supported events found.
+The L1-dcache-loads event is not supported.
+Error:
+No supported events found.
+The L1-dcache-loads event is not supported.

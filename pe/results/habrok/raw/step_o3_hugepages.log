@@ -1,0 +1,6 @@
+  O3-thp-always-base [all, 128 thr, sched=default] median 2.86 ms/trial
+pe/scripts/batch_all.sh: line 49: perf: command not found
+pe/scripts/batch_all.sh: line 49: perf: command not found
+  O3-thp-always-huge [all, 128 thr, sched=default] median 3.06 ms/trial
+pe/scripts/batch_all.sh: line 49: perf: command not found
+pe/scripts/batch_all.sh: line 49: perf: command not found

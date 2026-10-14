@@ -1,0 +1,32 @@
+# To display the perf.data header info, please use --header/--header-only options.
+#
+#
+# Total Lost Samples: 0
+#
+# Samples: 46K of event 'task-clock:ppp'
+# Event count (approx.): 9203640360
+#
+# Overhead  Shared Object         Symbol                                                                                                                      IPC   [IPC Coverage]
+# ........  ....................  ..........................................................................................................................  ....................
+#
+    35.78%  bfs_base              [.] BUStep(CSRGraph<int, int, true> const&, pvector<int>&, Bitmap&, Bitmap&) [clone ._omp_fn.0]                             -      -            
+    26.14%  libgomp.so.1.0.0      [.] 0x00000000000258a2                                                                                                      -      -            
+    20.52%  libgomp.so.1.0.0      [.] 0x00000000000256c2                                                                                                      -      -            
+     5.71%  bfs_base              [.] InitParent(CSRGraph<int, int, true> const&) [clone ._omp_fn.0]                                                          -      -            
+     3.10%  bfs_base              [.] TDStep(CSRGraph<int, int, true> const&, pvector<int>&, SlidingQueue<int>&) [clone ._omp_fn.0]                           -      -            
+     1.23%  bfs_base              [.] BitmapToQueue(CSRGraph<int, int, true> const&, Bitmap const&, SlidingQueue<int>&) [clone ._omp_fn.0]                    -      -            
+     1.12%  bfs_base              [.] QueueToBitmap(SlidingQueue<int> const&, Bitmap&) [clone ._omp_fn.0]                                                     -      -            
+     1.02%  bfs_base              [.] DOBFS(CSRGraph<int, int, true> const&, int, bool, int, int) [clone ._omp_fn.0]                                          -      -            
+     0.62%  libgomp.so.1.0.0      [.] 0x00000000000258a6                                                                                                      -      -            
+     0.50%  libgomp.so.1.0.0      [.] 0x00000000000256c6                                                                                                      -      -            
+     0.47%  libgomp.so.1.0.0      [.] 0x00000000000258af                                                                                                      -      -            
+     0.41%  libgomp.so.1.0.0      [.] 0x00000000000258ab                                                                                                      -      -            
+     0.38%  libgomp.so.1.0.0      [.] 0x00000000000256cd                                                                                                      -      -            
+     0.33%  libgomp.so.1.0.0      [.] 0x00000000000256c0                                                                                                      -      -            
+     0.31%  libgomp.so.1.0.0      [.] 0x00000000000256cb                                                                                                      -      -            
+     0.30%  libgomp.so.1.0.0      [.] 0x00000000000258a0                                                                                                      -      -            
+
+
+#
+# (Tip: For a higher level overview, try: perf report --sort comm,dso)
+#

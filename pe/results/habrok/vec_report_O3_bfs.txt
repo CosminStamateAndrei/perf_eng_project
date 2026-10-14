@@ -1,0 +1,479 @@
+src/bfs.cc:71:19: missed: couldn't vectorize loop
+src/bfs.cc:71:19: missed: not vectorized: multiple nested loops.
+src/bfs.cc:70:46: missed: couldn't vectorize loop
+src/bfs.cc:70:46: missed: not vectorized: control flow in loop.
+src/bfs.cc:73:21: missed: couldn't vectorize loop
+src/bfs.cc:73:21: missed: not vectorized: control flow in loop.
+src/bfs.cc:59:11: note: vectorized 0 loops in function.
+src/bfs.cc:59:11: missed: statement clobbers memory: _22 = __builtin_GOMP_loop_nonmonotonic_dynamic_start (0, _20, 1, 1024, &.istart0.23, &.iend0.24);
+src/bfs.cc:59:11: missed: statement clobbers memory: _45 = __builtin_GOMP_loop_nonmonotonic_dynamic_next (&.istart0.23, &.iend0.24);
+src/bfs.cc:68:35: missed: statement clobbers memory: __atomic_fetch_add_8 (_46, prephitmp_133, 0);
+src/bfs.cc:59:11: missed: statement clobbers memory: __builtin_GOMP_loop_end_nowait ();
+src/bfs.cc:68:35: note: ***** Analysis failed with vector mode V2DI
+src/bfs.cc:68:35: note: ***** Skipping vector mode V16QI, which would repeat the analysis for V2DI
+src/bfs.cc:150:71: missed: couldn't vectorize loop
+src/bfs.cc:146:11: note: vectorized 0 loops in function.
+src/bfs.cc:181:7: missed: couldn't vectorize loop
+src/bfs.cc:181:17: note: ***** Analysis failed with vector mode V2DI
+src/bfs.cc:181:17: note: ***** Skipping vector mode V16QI, which would repeat the analysis for V2DI
+src/bfs.cc:176:11: note: vectorized 0 loops in function.
+src/bfs.cc:181:17: note: ***** Analysis failed with vector mode V2DI
+src/bfs.cc:181:17: note: ***** Skipping vector mode V16QI, which would repeat the analysis for V2DI
+src/bfs.cc:248:5: missed: couldn't vectorize loop
+src/bfs.cc:248:5: missed: not vectorized: control flow in loop.
+src/bfs.cc:246:11: note: vectorized 0 loops in function.
+src/bfs.cc:249:17: note: ***** Analysis failed with vector mode V2DI
+src/bfs.cc:249:17: note: ***** Skipping vector mode V16QI, which would repeat the analysis for V2DI
+src/bfs.cc:166:7: missed: couldn't vectorize loop
+src/bfs.cc:166:7: missed: not vectorized: control flow in loop.
+src/bfs.cc:160:11: note: vectorized 0 loops in function.
+src/bfs.cc:160:11: note: ***** Analysis failed with vector mode V2DI
+src/bfs.cc:160:11: note: ***** Skipping vector mode V16QI, which would repeat the analysis for V2DI
+src/bfs.cc:111:71: missed: couldn't vectorize loop
+src/bfs.cc:111:71: missed: not vectorized: control flow in loop.
+src/bfs.cc:122:36: missed: couldn't vectorize loop
+src/bfs.cc:122:36: missed: not vectorized: control flow in loop.
+src/bfs.cc:99:11: note: vectorized 0 loops in function.
+src/bfs.cc:109:35: missed: statement clobbers memory: __atomic_fetch_add_8 (_123, 0, 0);
+src/bfs.cc:109:35: missed: statement clobbers memory: __atomic_fetch_add_8 (_56, scout_count.38_57, 0);
+src/bfs.cc:99:11: note: ***** Analysis failed with vector mode V2DI
+src/bfs.cc:99:11: note: ***** Skipping vector mode V16QI, which would repeat the analysis for V2DI
+src/bfs.cc:55:9: note: vectorized 0 loops in function.
+src/bfs.cc:55:9: missed: statement clobbers memory: __builtin_GOMP_parallel (_Z6BUStepRK8CSRGraphIiiLb1EER7pvectorIiER6BitmapS7_._omp_fn.0, &.omp_data_o.21, 0, 0);
+src/bfs.cc:59:11: note: ***** Analysis succeeded with vector mode V2DI
+src/bfs.cc:59:11: note: SLPing BB part
+src/bfs.cc:59:11: note: Costing subgraph: 
+src/bfs.cc:59:11: note: node 0x5573e9431958 (max_nunits=2, refcnt=1)
+src/bfs.cc:59:11: note: op template: .omp_data_o.21.g = g_3(D);
+src/bfs.cc:59:11: note: 	stmt 0 .omp_data_o.21.g = g_3(D);
+src/bfs.cc:59:11: note: 	stmt 1 .omp_data_o.21.parent = parent_5(D);
+src/bfs.cc:59:11: note: 	stmt 2 .omp_data_o.21.front = front_7(D);
+src/bfs.cc:59:11: note: 	stmt 3 .omp_data_o.21.next = next_2(D);
+src/bfs.cc:59:11: note: 	children 0x5573e94319d0
+src/bfs.cc:59:11: note: node (external) 0x5573e94319d0 (max_nunits=1, refcnt=1)
+src/bfs.cc:59:11: note: 	{ g_3(D), parent_5(D), front_7(D), next_2(D) }
+src/bfs.cc:59:11: note: Cost model analysis: 
+src/bfs.cc:59:11: note: Cost model analysis for part in loop 0:
+src/bfs.cc:59:11: note: Basic block will be vectorized using SLP
+src/bfs.cc:59:11: note: Vectorizing SLP tree:
+src/bfs.cc:59:11: note: node 0x5573e9431958 (max_nunits=2, refcnt=1)
+src/bfs.cc:59:11: note: op template: .omp_data_o.21.g = g_3(D);
+src/bfs.cc:59:11: note: 	stmt 0 .omp_data_o.21.g = g_3(D);
+src/bfs.cc:59:11: note: 	stmt 1 .omp_data_o.21.parent = parent_5(D);
+src/bfs.cc:59:11: note: 	stmt 2 .omp_data_o.21.front = front_7(D);
+src/bfs.cc:59:11: note: 	stmt 3 .omp_data_o.21.next = next_2(D);
+src/bfs.cc:59:11: note: 	children 0x5573e94319d0
+src/bfs.cc:59:11: note: node (external) 0x5573e94319d0 (max_nunits=1, refcnt=1)
+src/bfs.cc:59:11: note: 	{ g_3(D), parent_5(D), front_7(D), next_2(D) }
+src/bfs.cc:59:11: note: ------>vectorizing SLP node starting from: .omp_data_o.21.g = g_3(D);
+src/bfs.cc:59:11: note: vect_is_simple_use: operand parent_5(D), type of def: external
+src/bfs.cc:59:11: note: vect_is_simple_use: operand front_7(D), type of def: external
+src/bfs.cc:59:11: note: vect_is_simple_use: operand next_2(D), type of def: external
+src/bfs.cc:59:11: note: conflicting alias set types.
+src/bfs.cc:59:11: note: transform store. ncopies = 1
+src/bfs.cc:59:11: note: create vector_type-pointer variable to type: vector(2) long unsigned int  vectorizing a pointer ref: .omp_data_o.21.g
+src/bfs.cc:59:11: note: created &.omp_data_o.21.g
+src/bfs.cc:59:11: note: add new stmt: MEM <vector(2) long unsigned int> [(void *)&.omp_data_o.21] = _26;
+src/bfs.cc:59:11: note: add new stmt: _28 = &.omp_data_o.21.g + 16;
+src/bfs.cc:59:11: note: add new stmt: MEM <vector(2) long unsigned int> [(void *)_28] = _19;
+src/bfs.cc:59:11: note: vectorizing stmts using SLP.
+src/bfs.cc:59:11: optimized: basic block part vectorized using 16 byte vectors
+src/bfs.cc:59:11: note: ***** The result for vector mode V16QI would be the same
+src/bfs.cc:96:9: note: vectorized 0 loops in function.
+src/bfs.cc:96:9: missed: statement clobbers memory: __builtin_GOMP_parallel (_Z6TDStepRK8CSRGraphIiiLb1EER7pvectorIiER12SlidingQueueIiE._omp_fn.0, &.omp_data_o.37, 0, 0);
+src/bfs.cc:99:11: note: ***** Analysis succeeded with vector mode V2DI
+src/bfs.cc:99:11: note: SLPing BB part
+src/bfs.cc:99:11: note: Costing subgraph: 
+src/bfs.cc:99:11: note: node 0x5573e92dbdd8 (max_nunits=2, refcnt=1)
+src/bfs.cc:99:11: note: op template: .omp_data_o.37.g = g_2(D);
+src/bfs.cc:99:11: note: 	stmt 0 .omp_data_o.37.g = g_2(D);
+src/bfs.cc:99:11: note: 	stmt 1 .omp_data_o.37.parent = parent_4(D);
+src/bfs.cc:99:11: note: 	children 0x5573e92dbe50
+src/bfs.cc:99:11: note: node (external) 0x5573e92dbe50 (max_nunits=1, refcnt=1)
+src/bfs.cc:99:11: note: 	{ g_2(D), parent_4(D) }
+src/bfs.cc:99:11: note: Cost model analysis: 
+src/bfs.cc:99:11: note: Cost model analysis for part in loop 0:
+src/bfs.cc:99:11: note: Basic block will be vectorized using SLP
+src/bfs.cc:99:11: note: Vectorizing SLP tree:
+src/bfs.cc:99:11: note: node 0x5573e92dbdd8 (max_nunits=2, refcnt=1)
+src/bfs.cc:99:11: note: op template: .omp_data_o.37.g = g_2(D);
+src/bfs.cc:99:11: note: 	stmt 0 .omp_data_o.37.g = g_2(D);
+src/bfs.cc:99:11: note: 	stmt 1 .omp_data_o.37.parent = parent_4(D);
+src/bfs.cc:99:11: note: 	children 0x5573e92dbe50
+src/bfs.cc:99:11: note: node (external) 0x5573e92dbe50 (max_nunits=1, refcnt=1)
+src/bfs.cc:99:11: note: 	{ g_2(D), parent_4(D) }
+src/bfs.cc:99:11: note: ------>vectorizing SLP node starting from: .omp_data_o.37.g = g_2(D);
+src/bfs.cc:99:11: note: vect_is_simple_use: operand parent_4(D), type of def: external
+src/bfs.cc:99:11: note: conflicting alias set types.
+src/bfs.cc:99:11: note: transform store. ncopies = 1
+src/bfs.cc:99:11: note: create vector_type-pointer variable to type: vector(2) long unsigned int  vectorizing a pointer ref: .omp_data_o.37.g
+src/bfs.cc:99:11: note: created &.omp_data_o.37.g
+src/bfs.cc:99:11: note: add new stmt: MEM <vector(2) long unsigned int> [(void *)&.omp_data_o.37] = _14;
+src/bfs.cc:99:11: note: vectorizing stmts using SLP.
+src/bfs.cc:99:11: optimized: basic block part vectorized using 16 byte vectors
+src/bfs.cc:99:11: note: ***** The result for vector mode V16QI would be the same
+src/bfs.cc:145:6: note: vectorized 0 loops in function.
+src/bfs.cc:145:6: missed: statement clobbers memory: __builtin_GOMP_parallel (_Z13QueueToBitmapRK12SlidingQueueIiER6Bitmap._omp_fn.0, &.omp_data_o.52, 0, 0);
+src/bfs.cc:146:11: note: ***** Analysis succeeded with vector mode V2DI
+src/bfs.cc:146:11: note: SLPing BB part
+src/bfs.cc:146:11: note: Costing subgraph: 
+src/bfs.cc:146:11: note: node 0x5573e9431958 (max_nunits=2, refcnt=1)
+src/bfs.cc:146:11: note: op template: .omp_data_o.52.queue = queue_2(D);
+src/bfs.cc:146:11: note: 	stmt 0 .omp_data_o.52.queue = queue_2(D);
+src/bfs.cc:146:11: note: 	stmt 1 .omp_data_o.52.bm = bm_4(D);
+src/bfs.cc:146:11: note: 	children 0x5573e94319d0
+src/bfs.cc:146:11: note: node (external) 0x5573e94319d0 (max_nunits=1, refcnt=1)
+src/bfs.cc:146:11: note: 	{ queue_2(D), bm_4(D) }
+src/bfs.cc:146:11: note: Cost model analysis: 
+src/bfs.cc:146:11: note: Cost model analysis for part in loop 0:
+src/bfs.cc:146:11: note: Basic block will be vectorized using SLP
+src/bfs.cc:146:11: note: Vectorizing SLP tree:
+src/bfs.cc:146:11: note: node 0x5573e9431958 (max_nunits=2, refcnt=1)
+src/bfs.cc:146:11: note: op template: .omp_data_o.52.queue = queue_2(D);
+src/bfs.cc:146:11: note: 	stmt 0 .omp_data_o.52.queue = queue_2(D);
+src/bfs.cc:146:11: note: 	stmt 1 .omp_data_o.52.bm = bm_4(D);
+src/bfs.cc:146:11: note: 	children 0x5573e94319d0
+src/bfs.cc:146:11: note: node (external) 0x5573e94319d0 (max_nunits=1, refcnt=1)
+src/bfs.cc:146:11: note: 	{ queue_2(D), bm_4(D) }
+src/bfs.cc:146:11: note: ------>vectorizing SLP node starting from: .omp_data_o.52.queue = queue_2(D);
+src/bfs.cc:146:11: note: vect_is_simple_use: operand bm_4(D), type of def: external
+src/bfs.cc:146:11: note: conflicting alias set types.
+src/bfs.cc:146:11: note: transform store. ncopies = 1
+src/bfs.cc:146:11: note: create vector_type-pointer variable to type: vector(2) long unsigned int  vectorizing a pointer ref: .omp_data_o.52.queue
+src/bfs.cc:146:11: note: created &.omp_data_o.52.queue
+src/bfs.cc:146:11: note: add new stmt: MEM <vector(2) long unsigned int> [(void *)&.omp_data_o.52] = _10;
+src/bfs.cc:146:11: note: vectorizing stmts using SLP.
+src/bfs.cc:146:11: optimized: basic block part vectorized using 16 byte vectors
+src/bfs.cc:146:11: note: ***** The result for vector mode V16QI would be the same
+src/bfs.cc:158:6: note: vectorized 0 loops in function.
+src/bfs.cc:158:6: missed: statement clobbers memory: __builtin_GOMP_parallel (_Z13BitmapToQueueRK8CSRGraphIiiLb1EERK6BitmapR12SlidingQueueIiE._omp_fn.0, &.omp_data_o.63, 0, 0);
+src/bfs.cc:160:11: note: Costing subgraph: 
+src/bfs.cc:160:11: note: node 0x5573e92dbdd8 (max_nunits=2, refcnt=1)
+src/bfs.cc:160:11: note: op template: .omp_data_o.63.g = g_2(D);
+src/bfs.cc:160:11: note: 	stmt 0 .omp_data_o.63.g = g_2(D);
+src/bfs.cc:160:11: note: 	stmt 1 .omp_data_o.63.bm = bm_4(D);
+src/bfs.cc:160:11: note: 	children 0x5573e92dbe50
+src/bfs.cc:160:11: note: node (external) 0x5573e92dbe50 (max_nunits=1, refcnt=1)
+src/bfs.cc:160:11: note: 	{ g_2(D), bm_4(D) }
+src/bfs.cc:160:11: note: Cost model analysis: 
+src/bfs.cc:160:11: note: Cost model analysis for part in loop 0:
+src/bfs.cc:160:11: note: Basic block will be vectorized using SLP
+src/bfs.cc:160:11: note: Vectorizing SLP tree:
+src/bfs.cc:160:11: note: node 0x5573e92dbdd8 (max_nunits=2, refcnt=1)
+src/bfs.cc:160:11: note: op template: .omp_data_o.63.g = g_2(D);
+src/bfs.cc:160:11: note: 	stmt 0 .omp_data_o.63.g = g_2(D);
+src/bfs.cc:160:11: note: 	stmt 1 .omp_data_o.63.bm = bm_4(D);
+src/bfs.cc:160:11: note: 	children 0x5573e92dbe50
+src/bfs.cc:160:11: note: node (external) 0x5573e92dbe50 (max_nunits=1, refcnt=1)
+src/bfs.cc:160:11: note: 	{ g_2(D), bm_4(D) }
+src/bfs.cc:160:11: note: ------>vectorizing SLP node starting from: .omp_data_o.63.g = g_2(D);
+src/bfs.cc:160:11: note: vect_is_simple_use: operand bm_4(D), type of def: external
+src/bfs.cc:160:11: note: conflicting alias set types.
+src/bfs.cc:160:11: note: transform store. ncopies = 1
+src/bfs.cc:160:11: note: create vector_type-pointer variable to type: vector(2) long unsigned int  vectorizing a pointer ref: .omp_data_o.63.g
+src/bfs.cc:160:11: note: created &.omp_data_o.63.g
+src/bfs.cc:160:11: note: add new stmt: MEM <vector(2) long unsigned int> [(void *)&.omp_data_o.63] = _16;
+src/bfs.cc:160:11: note: vectorizing stmts using SLP.
+src/bfs.cc:160:11: optimized: basic block part vectorized using 16 byte vectors
+src/bfs.cc:174:17: note: vectorized 0 loops in function.
+src/bfs.cc:174:17: missed: statement clobbers memory: __builtin_GOMP_parallel (_Z10InitParentRK8CSRGraphIiiLb1EE._omp_fn.0, &.omp_data_o.70, 0, 0);
+src/bfs.cc:176:11: note: Costing subgraph: 
+src/bfs.cc:176:11: note: node 0x5573e94a19c8 (max_nunits=2, refcnt=1)
+src/bfs.cc:176:11: note: op template: .omp_data_o.70.g = g_3(D);
+src/bfs.cc:176:11: note: 	stmt 0 .omp_data_o.70.g = g_3(D);
+src/bfs.cc:176:11: note: 	stmt 1 .omp_data_o.70.parent = parent_5(D);
+src/bfs.cc:176:11: note: 	children 0x5573e94a1a40
+src/bfs.cc:176:11: note: node (external) 0x5573e94a1a40 (max_nunits=1, refcnt=1)
+src/bfs.cc:176:11: note: 	{ g_3(D), parent_5(D) }
+src/bfs.cc:176:11: note: Cost model analysis: 
+src/bfs.cc:176:11: note: Cost model analysis for part in loop 0:
+src/bfs.cc:176:11: note: Basic block will be vectorized using SLP
+src/bfs.cc:176:11: note: Vectorizing SLP tree:
+src/bfs.cc:176:11: note: node 0x5573e94a19c8 (max_nunits=2, refcnt=1)
+src/bfs.cc:176:11: note: op template: .omp_data_o.70.g = g_3(D);
+src/bfs.cc:176:11: note: 	stmt 0 .omp_data_o.70.g = g_3(D);
+src/bfs.cc:176:11: note: 	stmt 1 .omp_data_o.70.parent = parent_5(D);
+src/bfs.cc:176:11: note: 	children 0x5573e94a1a40
+src/bfs.cc:176:11: note: node (external) 0x5573e94a1a40 (max_nunits=1, refcnt=1)
+src/bfs.cc:176:11: note: 	{ g_3(D), parent_5(D) }
+src/bfs.cc:176:11: note: ------>vectorizing SLP node starting from: .omp_data_o.70.g = g_3(D);
+src/bfs.cc:176:11: note: vect_is_simple_use: operand parent_5(D), type of def: external
+src/bfs.cc:176:11: note: conflicting alias set types.
+src/bfs.cc:176:11: note: transform store. ncopies = 1
+src/bfs.cc:176:11: note: create vector_type-pointer variable to type: vector(2) long unsigned int  vectorizing a pointer ref: .omp_data_o.70.g
+src/bfs.cc:176:11: note: created &.omp_data_o.70.g
+src/bfs.cc:176:11: note: add new stmt: MEM <vector(2) long unsigned int> [(void *)&.omp_data_o.70] = _6;
+src/bfs.cc:176:11: note: vectorizing stmts using SLP.
+src/bfs.cc:176:11: optimized: basic block part vectorized using 16 byte vectors
+src/bfs.cc:214:22: missed: couldn't vectorize loop
+src/bfs.cc:214:22: missed: not vectorized: control flow in loop.
+src/bfs.cc:221:25: missed: couldn't vectorize loop
+src/bfs.cc:221:25: missed: not vectorized: control flow in loop.
+src/bfs.cc:194:17: note: vectorized 0 loops in function.
+src/bfs.cc:194:17: missed: splitting region at control altering definition _343 = operator new [] (iftmp.85_342);
+src/bfs.cc:197:14: missed: not vectorized: statement can throw an exception: PrintStep (&D.83284, _1);
+src/bfs.cc:194:17: missed: statement clobbers memory: __builtin_GOMP_parallel (_Z10InitParentRK8CSRGraphIiiLb1EE._omp_fn.0, &.omp_data_o.70, 0, 0);
+src/bfs.cc:194:17: missed: not vectorized: statement can throw an exception: resx 14
+src/bfs.cc:176:11: note: Costing subgraph: 
+src/bfs.cc:176:11: note: node 0x5573e9451978 (max_nunits=2, refcnt=1)
+src/bfs.cc:176:11: note: op template: .omp_data_o.70.g = g_42(D);
+src/bfs.cc:176:11: note: 	stmt 0 .omp_data_o.70.g = g_42(D);
+src/bfs.cc:176:11: note: 	stmt 1 .omp_data_o.70.parent = parent_41(D);
+src/bfs.cc:176:11: note: 	children 0x5573e94519f0
+src/bfs.cc:176:11: note: node (external) 0x5573e94519f0 (max_nunits=1, refcnt=1)
+src/bfs.cc:176:11: note: 	{ g_42(D), parent_41(D) }
+src/bfs.cc:176:11: note: Cost model analysis: 
+src/bfs.cc:176:11: note: Cost model analysis for part in loop 0:
+src/bfs.cc:176:11: note: Basic block will be vectorized using SLP
+src/bfs.cc:176:11: note: Vectorizing SLP tree:
+src/bfs.cc:176:11: note: node 0x5573e9451978 (max_nunits=2, refcnt=1)
+src/bfs.cc:176:11: note: op template: .omp_data_o.70.g = g_42(D);
+src/bfs.cc:176:11: note: 	stmt 0 .omp_data_o.70.g = g_42(D);
+src/bfs.cc:176:11: note: 	stmt 1 .omp_data_o.70.parent = parent_41(D);
+src/bfs.cc:176:11: note: 	children 0x5573e94519f0
+src/bfs.cc:176:11: note: node (external) 0x5573e94519f0 (max_nunits=1, refcnt=1)
+src/bfs.cc:176:11: note: 	{ g_42(D), parent_41(D) }
+src/bfs.cc:176:11: note: ------>vectorizing SLP node starting from: .omp_data_o.70.g = g_42(D);
+src/bfs.cc:176:11: note: vect_is_simple_use: operand parent_41(D), type of def: external
+src/bfs.cc:176:11: note: conflicting alias set types.
+src/bfs.cc:176:11: note: transform store. ncopies = 1
+src/bfs.cc:176:11: note: create vector_type-pointer variable to type: vector(2) long unsigned int  vectorizing a pointer ref: .omp_data_o.70.g
+src/bfs.cc:176:11: note: created &.omp_data_o.70.g
+src/bfs.cc:176:11: note: add new stmt: MEM <vector(2) long unsigned int> [(void *)&.omp_data_o.70] = _361;
+src/bfs.cc:176:11: note: vectorizing stmts using SLP.
+src/bfs.cc:176:11: optimized: basic block part vectorized using 16 byte vectors
+src/bfs.cc:194:17: missed: statement clobbers memory: __builtin_GOMP_parallel (_Z6TDStepRK8CSRGraphIiiLb1EER7pvectorIiER12SlidingQueueIiE._omp_fn.0, &.omp_data_o.37, 0, 0);
+src/bfs.cc:194:17: missed: not vectorized: statement can throw an exception: resx 49
+src/bfs.cc:194:17: missed: statement clobbers memory: __builtin_GOMP_parallel (_Z13QueueToBitmapRK12SlidingQueueIiER6Bitmap._omp_fn.0, &.omp_data_o.52, 0, 0);
+src/bfs.cc:194:17: missed: not vectorized: statement can throw an exception: resx 25
+src/bfs.cc:194:17: missed: statement clobbers memory: __builtin_GOMP_parallel (_Z6BUStepRK8CSRGraphIiiLb1EER7pvectorIiER6BitmapS7_._omp_fn.0, &.omp_data_o.21, 0, 0);
+src/bfs.cc:194:17: missed: not vectorized: statement can throw an exception: resx 33
+src/bfs.cc:194:17: missed: statement clobbers memory: __builtin_GOMP_parallel (_Z13BitmapToQueueRK8CSRGraphIiiLb1EERK6BitmapR12SlidingQueueIiE._omp_fn.0, &.omp_data_o.63, 0, 0);
+src/bfs.cc:194:17: missed: not vectorized: statement can throw an exception: resx 41
+src/bfs.cc:194:17: missed: not vectorized: statement can throw an exception: resx 21
+src/bfs.cc:99:11: note: Costing subgraph: 
+src/bfs.cc:99:11: note: node 0x5573e9451a68 (max_nunits=2, refcnt=1)
+src/bfs.cc:99:11: note: op template: .omp_data_o.37.g = g_42(D);
+src/bfs.cc:99:11: note: 	stmt 0 .omp_data_o.37.g = g_42(D);
+src/bfs.cc:99:11: note: 	stmt 1 .omp_data_o.37.parent = parent_41(D);
+src/bfs.cc:99:11: note: 	children 0x5573e9451ae0
+src/bfs.cc:99:11: note: node (external) 0x5573e9451ae0 (max_nunits=1, refcnt=1)
+src/bfs.cc:99:11: note: 	{ g_42(D), parent_41(D) }
+src/bfs.cc:99:11: note: Cost model analysis: 
+src/bfs.cc:99:11: note: Cost model analysis for part in loop 1:
+src/bfs.cc:99:11: note: Vectorizing SLP tree:
+src/bfs.cc:99:11: note: node 0x5573e9451a68 (max_nunits=2, refcnt=1)
+src/bfs.cc:99:11: note: op template: .omp_data_o.37.g = g_42(D);
+src/bfs.cc:99:11: note: 	stmt 0 .omp_data_o.37.g = g_42(D);
+src/bfs.cc:99:11: note: 	stmt 1 .omp_data_o.37.parent = parent_41(D);
+src/bfs.cc:99:11: note: 	children 0x5573e9451ae0
+src/bfs.cc:99:11: note: node (external) 0x5573e9451ae0 (max_nunits=1, refcnt=1)
+src/bfs.cc:99:11: note: 	{ g_42(D), parent_41(D) }
+src/bfs.cc:99:11: note: ------>vectorizing SLP node starting from: .omp_data_o.37.g = g_42(D);
+src/bfs.cc:99:11: note: vect_is_simple_use: operand parent_41(D), type of def: external
+src/bfs.cc:99:11: note: conflicting alias set types.
+src/bfs.cc:99:11: note: transform store. ncopies = 1
+src/bfs.cc:99:11: note: create vector_type-pointer variable to type: vector(2) long unsigned int  vectorizing a pointer ref: .omp_data_o.37.g
+src/bfs.cc:99:11: note: created &.omp_data_o.37.g
+src/bfs.cc:99:11: note: add new stmt: MEM <vector(2) long unsigned int> [(void *)&.omp_data_o.37] = _224;
+src/bfs.cc:99:11: note: vectorizing stmts using SLP.
+src/bfs.cc:99:11: optimized: basic block part vectorized using 16 byte vectors
+src/bfs.cc:146:11: note: Costing subgraph: 
+src/bfs.cc:146:11: note: node 0x5573e9451c48 (max_nunits=2, refcnt=1)
+src/bfs.cc:146:11: note: op template: .omp_data_o.52.queue = &queue;
+src/bfs.cc:146:11: note: 	stmt 0 .omp_data_o.52.queue = &queue;
+src/bfs.cc:146:11: note: 	stmt 1 .omp_data_o.52.bm = &front;
+src/bfs.cc:146:11: note: 	children 0x5573e9451cc0
+src/bfs.cc:146:11: note: node (external) 0x5573e9451cc0 (max_nunits=1, refcnt=1)
+src/bfs.cc:146:11: note: 	{ &queue, &front }
+src/bfs.cc:146:11: note: Cost model analysis: 
+src/bfs.cc:146:11: note: Cost model analysis for part in loop 1:
+src/bfs.cc:146:11: note: Vectorizing SLP tree:
+src/bfs.cc:146:11: note: node 0x5573e9451c48 (max_nunits=2, refcnt=1)
+src/bfs.cc:146:11: note: op template: .omp_data_o.52.queue = &queue;
+src/bfs.cc:146:11: note: 	stmt 0 .omp_data_o.52.queue = &queue;
+src/bfs.cc:146:11: note: 	stmt 1 .omp_data_o.52.bm = &front;
+src/bfs.cc:146:11: note: 	children 0x5573e9451cc0
+src/bfs.cc:146:11: note: node (external) 0x5573e9451cc0 (max_nunits=1, refcnt=1)
+src/bfs.cc:146:11: note: 	{ &queue, &front }
+src/bfs.cc:146:11: note: ------>vectorizing SLP node starting from: .omp_data_o.52.queue = &queue;
+src/bfs.cc:146:11: note: vect_is_simple_use: operand &front, type of def: external
+src/bfs.cc:146:11: note: conflicting alias set types.
+src/bfs.cc:146:11: note: transform store. ncopies = 1
+src/bfs.cc:146:11: note: create vector_type-pointer variable to type: vector(2) long unsigned int  vectorizing a pointer ref: .omp_data_o.52.queue
+src/bfs.cc:146:11: note: created &.omp_data_o.52.queue
+src/bfs.cc:146:11: note: add new stmt: MEM <vector(2) long unsigned int> [(void *)&.omp_data_o.52] = _81;
+src/bfs.cc:146:11: note: vectorizing stmts using SLP.
+src/bfs.cc:146:11: optimized: basic block part vectorized using 16 byte vectors
+src/bfs.cc:59:11: note: Costing subgraph: 
+src/bfs.cc:59:11: note: node 0x5573e9451f18 (max_nunits=2, refcnt=1)
+src/bfs.cc:59:11: note: op template: .omp_data_o.21.g = g_42(D);
+src/bfs.cc:59:11: note: 	stmt 0 .omp_data_o.21.g = g_42(D);
+src/bfs.cc:59:11: note: 	stmt 1 .omp_data_o.21.parent = parent_41(D);
+src/bfs.cc:59:11: note: 	children 0x5573e9451f90
+src/bfs.cc:59:11: note: node (external) 0x5573e9451f90 (max_nunits=1, refcnt=1)
+src/bfs.cc:59:11: note: 	{ g_42(D), parent_41(D) }
+src/bfs.cc:59:11: note: Cost model analysis: 
+src/bfs.cc:59:11: note: Cost model analysis for part in loop 6:
+src/bfs.cc:59:11: note: Vectorizing SLP tree:
+src/bfs.cc:59:11: note: node 0x5573e9451f18 (max_nunits=2, refcnt=1)
+src/bfs.cc:59:11: note: op template: .omp_data_o.21.g = g_42(D);
+src/bfs.cc:59:11: note: 	stmt 0 .omp_data_o.21.g = g_42(D);
+src/bfs.cc:59:11: note: 	stmt 1 .omp_data_o.21.parent = parent_41(D);
+src/bfs.cc:59:11: note: 	children 0x5573e9451f90
+src/bfs.cc:59:11: note: node (external) 0x5573e9451f90 (max_nunits=1, refcnt=1)
+src/bfs.cc:59:11: note: 	{ g_42(D), parent_41(D) }
+src/bfs.cc:59:11: note: ------>vectorizing SLP node starting from: .omp_data_o.21.g = g_42(D);
+src/bfs.cc:59:11: note: vect_is_simple_use: operand parent_41(D), type of def: external
+src/bfs.cc:59:11: note: conflicting alias set types.
+src/bfs.cc:59:11: note: transform store. ncopies = 1
+src/bfs.cc:59:11: note: create vector_type-pointer variable to type: vector(2) long unsigned int  vectorizing a pointer ref: .omp_data_o.21.g
+src/bfs.cc:59:11: note: created &.omp_data_o.21.g
+src/bfs.cc:59:11: note: add new stmt: MEM <vector(2) long unsigned int> [(void *)&.omp_data_o.21] = _13;
+src/bfs.cc:59:11: note: vectorizing stmts using SLP.
+src/bfs.cc:59:11: optimized: basic block part vectorized using 16 byte vectors
+src/bfs.cc:59:11: note: Costing subgraph: 
+src/bfs.cc:59:11: note: node 0x5573e9452008 (max_nunits=2, refcnt=1)
+src/bfs.cc:59:11: note: op template: .omp_data_o.21.front = &front;
+src/bfs.cc:59:11: note: 	stmt 0 .omp_data_o.21.front = &front;
+src/bfs.cc:59:11: note: 	stmt 1 .omp_data_o.21.next = &curr;
+src/bfs.cc:59:11: note: 	children 0x5573e9452080
+src/bfs.cc:59:11: note: node (external) 0x5573e9452080 (max_nunits=1, refcnt=1)
+src/bfs.cc:59:11: note: 	{ &front, &curr }
+src/bfs.cc:59:11: note: Cost model analysis: 
+src/bfs.cc:59:11: note: Cost model analysis for part in loop 6:
+src/bfs.cc:59:11: note: Vectorizing SLP tree:
+src/bfs.cc:59:11: note: node 0x5573e9452008 (max_nunits=2, refcnt=1)
+src/bfs.cc:59:11: note: op template: .omp_data_o.21.front = &front;
+src/bfs.cc:59:11: note: 	stmt 0 .omp_data_o.21.front = &front;
+src/bfs.cc:59:11: note: 	stmt 1 .omp_data_o.21.next = &curr;
+src/bfs.cc:59:11: note: 	children 0x5573e9452080
+src/bfs.cc:59:11: note: node (external) 0x5573e9452080 (max_nunits=1, refcnt=1)
+src/bfs.cc:59:11: note: 	{ &front, &curr }
+src/bfs.cc:59:11: note: ------>vectorizing SLP node starting from: .omp_data_o.21.front = &front;
+src/bfs.cc:59:11: note: vect_is_simple_use: operand &curr, type of def: external
+src/bfs.cc:59:11: note: transform store. ncopies = 1
+src/bfs.cc:59:11: note: create vector_type-pointer variable to type: vector(2) long unsigned int  vectorizing a pointer ref: .omp_data_o.21.front
+src/bfs.cc:59:11: note: created &.omp_data_o.21.front
+src/bfs.cc:59:11: note: add new stmt: MEM <vector(2) long unsigned int> [(struct Bitmap & *)&.omp_data_o.21 + 16B] = _129;
+src/bfs.cc:59:11: note: vectorizing stmts using SLP.
+src/bfs.cc:59:11: optimized: basic block part vectorized using 16 byte vectors
+src/bfs.cc:194:17: missed: not vectorized: statement can throw an exception: resx 20
+src/bfs.cc:194:17: missed: not vectorized: statement can throw an exception: resx 19
+src/bfs.cc:234:18: note: ***** Analysis failed with vector mode V2DI
+src/bfs.cc:234:18: note: ***** Skipping vector mode V16QI, which would repeat the analysis for V2DI
+src/bfs.cc:234:18: missed: splitting region at dominance boundary bb27
+src/bfs.cc:214:10: note: ***** Analysis failed with vector mode V2DI
+src/bfs.cc:214:10: note: ***** Skipping vector mode V16QI, which would repeat the analysis for V2DI
+src/bfs.cc:214:10: missed: splitting region at dominance boundary bb115
+src/bfs.cc:194:17: missed: statement clobbers memory: __builtin_GOMP_parallel (_Z5DOBFSRK8CSRGraphIiiLb1EEibii._omp_fn.0, &.omp_data_o.82, 0, 0);
+src/bfs.cc:246:11: note: ***** Analysis succeeded with vector mode V2DI
+src/bfs.cc:246:11: note: SLPing BB part
+src/bfs.cc:246:11: note: Costing subgraph: 
+src/bfs.cc:246:11: note: node 0x5573e94523c8 (max_nunits=2, refcnt=1)
+src/bfs.cc:246:11: note: op template: .omp_data_o.82.g = g_42(D);
+src/bfs.cc:246:11: note: 	stmt 0 .omp_data_o.82.g = g_42(D);
+src/bfs.cc:246:11: note: 	stmt 1 .omp_data_o.82.parent = parent_41(D);
+src/bfs.cc:246:11: note: 	children 0x5573e9452440
+src/bfs.cc:246:11: note: node (external) 0x5573e9452440 (max_nunits=1, refcnt=1)
+src/bfs.cc:246:11: note: 	{ g_42(D), parent_41(D) }
+src/bfs.cc:246:11: note: Cost model analysis: 
+src/bfs.cc:246:11: note: Cost model analysis for part in loop 0:
+src/bfs.cc:246:11: note: Basic block will be vectorized using SLP
+src/bfs.cc:246:11: note: Vectorizing SLP tree:
+src/bfs.cc:246:11: note: node 0x5573e94523c8 (max_nunits=2, refcnt=1)
+src/bfs.cc:246:11: note: op template: .omp_data_o.82.g = g_42(D);
+src/bfs.cc:246:11: note: 	stmt 0 .omp_data_o.82.g = g_42(D);
+src/bfs.cc:246:11: note: 	stmt 1 .omp_data_o.82.parent = parent_41(D);
+src/bfs.cc:246:11: note: 	children 0x5573e9452440
+src/bfs.cc:246:11: note: node (external) 0x5573e9452440 (max_nunits=1, refcnt=1)
+src/bfs.cc:246:11: note: 	{ g_42(D), parent_41(D) }
+src/bfs.cc:246:11: note: ------>vectorizing SLP node starting from: .omp_data_o.82.g = g_42(D);
+src/bfs.cc:246:11: note: vect_is_simple_use: operand parent_41(D), type of def: external
+src/bfs.cc:246:11: note: conflicting alias set types.
+src/bfs.cc:246:11: note: transform store. ncopies = 1
+src/bfs.cc:246:11: note: create vector_type-pointer variable to type: vector(2) long unsigned int  vectorizing a pointer ref: .omp_data_o.82.g
+src/bfs.cc:246:11: note: created &.omp_data_o.82.g
+src/bfs.cc:246:11: note: add new stmt: MEM <vector(2) long unsigned int> [(void *)&.omp_data_o.82] = _423;
+src/bfs.cc:246:11: note: vectorizing stmts using SLP.
+src/bfs.cc:246:11: optimized: basic block part vectorized using 16 byte vectors
+src/bfs.cc:246:11: note: ***** The result for vector mode V16QI would be the same
+src/bfs.cc:246:11: missed: splitting region at dominance boundary bb36
+src/bfs.cc:246:11: note: ***** Analysis failed with vector mode VOID
+src/bfs.cc:246:11: missed: splitting region at dominance boundary bb69
+src/bfs.cc:246:11: note: ***** Analysis failed with vector mode VOID
+src/bfs.cc:262:30: missed: couldn't vectorize loop
+src/bfs.cc:262:30: missed: not vectorized: control flow in loop.
+src/bfs.cc:259:6: note: vectorized 0 loops in function.
+src/bfs.cc:294:30: missed: couldn't vectorize loop
+src/bfs.cc:294:30: missed: not vectorized: control flow in loop.
+src/bfs.cc:304:19: missed: couldn't vectorize loop
+src/bfs.cc:304:19: missed: not vectorized: control flow in loop.
+src/bfs.cc:285:60: missed: couldn't vectorize loop
+src/bfs.cc:285:60: missed: not vectorized: control flow in loop.
+src/bfs.cc:287:17: missed: couldn't vectorize loop
+src/bfs.cc:287:17: missed: not vectorized: control flow in loop.
+src/bfs.cc:278:6: note: vectorized 0 loops in function.
+src/bfs.cc:278:6: missed: splitting region at control altering definition _164 = operator new (_163);
+src/bfs.cc:278:6: missed: statement clobbers memory: __builtin_GOMP_parallel (_ZN7pvectorIiE4fillEi._omp_fn.0, &.omp_data_o.114, 0, 0);
+src/bfs.cc:304:35: note: ***** Analysis failed with vector mode V2DI
+src/bfs.cc:304:35: note: ***** Skipping vector mode V16QI, which would repeat the analysis for V2DI
+src/bfs.cc:304:35: missed: splitting region at control altering definition _57 = std::basic_ostream<char>::operator<< (&cout, _19);
+src/bfs.cc:315:60: missed: not vectorized: statement can throw an exception: _57 = std::basic_ostream<char>::operator<< (&cout, _19);
+src/bfs.cc:315:60: note: ***** Analysis failed with vector mode V2DI
+src/bfs.cc:315:60: note: ***** Skipping vector mode V16QI, which would repeat the analysis for V2DI
+src/bfs.cc:315:60: missed: splitting region at control altering definition _59 = std::basic_ostream<char>::operator<< (_57, SR.890_350);
+src/bfs.cc:315:70: missed: not vectorized: statement can throw an exception: _59 = std::basic_ostream<char>::operator<< (_57, SR.890_350);
+src/bfs.cc:315:70: note: ***** Analysis failed with vector mode VOID
+src/bfs.cc:315:70: missed: splitting region at control altering definition _254 = OBJ_TYPE_REF(_248;_237->6) (_237, 10);
+src/bfs.cc:306:11: note: ***** Analysis failed with vector mode V4SI
+src/bfs.cc:306:11: note: ***** Skipping vector mode V16QI, which would repeat the analysis for V4SI
+src/bfs.cc:306:11: missed: splitting region at control altering definition _52 = std::basic_ostream<char>::operator<< (&cout, SR.890_217);
+src/bfs.cc:307:49: missed: not vectorized: statement can throw an exception: _52 = std::basic_ostream<char>::operator<< (&cout, SR.890_217);
+src/bfs.cc:307:49: note: ***** Analysis failed with vector mode VOID
+src/bfs.cc:307:49: missed: splitting region at control altering definition _54 = std::basic_ostream<char>::operator<< (_52, v_189);
+src/bfs.cc:307:58: missed: not vectorized: statement can throw an exception: _54 = std::basic_ostream<char>::operator<< (_52, v_189);
+src/bfs.cc:307:58: note: ***** Analysis failed with vector mode VOID
+src/bfs.cc:307:58: missed: splitting region at control altering definition _226 = OBJ_TYPE_REF(_220;_209->6) (_209, 10);
+src/bfs.cc:297:13: note: ***** Analysis failed with vector mode VOID
+src/bfs.cc:297:13: missed: splitting region at dominance boundary bb27
+src/bfs.cc:294:30: note: ***** Analysis failed with vector mode VOID
+src/bfs.cc:294:30: missed: splitting region at dominance boundary bb134
+src/bfs.cc:294:30: note: ***** Analysis failed with vector mode VOID
+src/bfs.cc:294:30: missed: splitting region at dominance boundary bb34
+src/bfs.cc:294:30: note: ***** Analysis failed with vector mode VOID
+src/bfs.cc:294:30: missed: splitting region at control altering definition _198 = OBJ_TYPE_REF(_192;_181->6) (_181, 10);
+src/bfs.cc:278:6: note: ***** Analysis failed with vector mode V2DI
+src/bfs.cc:278:6: note: ***** Skipping vector mode V16QI, which would repeat the analysis for V2DI
+src/bfs.cc:278:6: missed: splitting region at dominance boundary bb136
+src/bfs.cc:278:6: missed: not vectorized: statement can throw an exception: resx 3
+src/bfs.cc:327:5: note: vectorized 0 loops in function.
+src/bfs.cc:327:5: missed: splitting region at control altering definition g = BuilderBase<int, int, int>::MakeGraph (&b); [return slot optimization]
+src/bfs.cc:328:47: missed: statement clobbers memory: std::__cxx11::basic_string<char>::__ct_base .constprop (&D.84827, "breadth-first search");
+src/bfs.cc:328:47: missed: not vectorized: statement can throw an exception: CLApp::CLApp (&cli, argc_8(D), argv_9(D), &D.84827);
+src/bfs.cc:332:25: missed: not vectorized: statement can throw an exception: g = BuilderBase<int, int, int>::MakeGraph (&b); [return slot optimization]
+src/bfs.cc:338:47: missed: statement clobbers memory: SourcePicker<CSRGraph<int> >::SourcePicker (&sp, &g, _1);
+src/bfs.cc:342:48: missed: statement clobbers memory: SourcePicker<CSRGraph<int> >::SourcePicker (&vsp, &g, _1);
+src/bfs.cc:340:52: missed: not vectorized: statement can throw an exception: result = DOBFS (&g, _189, _185, 15, 18); [return slot optimization]
+src/bfs.cc:340:52: note: ***** Analysis failed with vector mode V2DI
+src/bfs.cc:340:52: note: ***** Skipping vector mode V16QI, which would repeat the analysis for V2DI
+src/bfs.cc:340:52: missed: splitting region at dominance boundary bb82
+src/bfs.cc:340:52: note: ***** Analysis failed with vector mode VOID
+src/bfs.cc:340:52: missed: splitting region at loop 2 exit at bb124
+src/bfs.cc:327:5: missed: not vectorized: statement can throw an exception: resx 18
+src/bfs.cc:344:23: missed: not vectorized: statement can throw an exception: _264 = BFSVerifier (&g, _263, &result);
+src/bfs.cc:344:23: note: ***** Analysis failed with vector mode V16QI
+src/bfs.cc:344:23: note: ***** Skipping vector mode V16QI, which would repeat the analysis for V16QI
+src/bfs.cc:344:23: missed: splitting region at dominance boundary bb104
+src/bfs.cc:344:23: note: ***** Analysis failed with vector mode VOID
+src/bfs.cc:344:23: missed: splitting region at loop 2 exit at bb128
+src/bfs.cc:327:5: missed: not vectorized: statement can throw an exception: resx 20
+src/bfs.cc:327:5: missed: not vectorized: statement can throw an exception: resx 19
+src/bfs.cc:327:5: missed: not vectorized: statement can throw an exception: resx 21
+src/bfs.cc:327:5: missed: not vectorized: statement can throw an exception: resx 17
+src/bfs.cc:327:5: missed: not vectorized: statement can throw an exception: resx 22
+src/bfs.cc:327:5: missed: not vectorized: statement can throw an exception: resx 13
+src/bfs.cc:327:5: note: ***** Analysis failed with vector mode V2DI
+src/bfs.cc:327:5: note: ***** Skipping vector mode V16QI, which would repeat the analysis for V2DI
+src/bfs.cc:327:5: missed: splitting region at dominance boundary bb6
+src/bfs.cc:349:1: note: ***** Analysis failed with vector mode VOID

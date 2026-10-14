@@ -1,0 +1,3 @@
+res CLOCK_MONOTONIC ns 1
+res CLOCK_PROCESS_CPUTIME_ID ns 1
+clock_gettime overhead ns 36.1 (sink 1)

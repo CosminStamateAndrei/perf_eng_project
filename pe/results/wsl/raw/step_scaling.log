@@ -1,0 +1,12 @@
+  scaling-bound [all, 1 thr, sched=default] median 56.88 ms/trial
+  scaling-unbound [all, 1 thr, sched=default] median 50.19 ms/trial
+  scaling-bound [all, 2 thr, sched=default] median 27.06 ms/trial
+  scaling-unbound [all, 2 thr, sched=default] median 22.42 ms/trial
+  scaling-bound [all, 4 thr, sched=default] median 11.52 ms/trial
+  scaling-unbound [all, 4 thr, sched=default] median 11.51 ms/trial
+  scaling-bound [all, 6 thr, sched=default] median 9.25 ms/trial
+  scaling-unbound [all, 6 thr, sched=default] median 9.52 ms/trial
+  scaling-bound [all, 8 thr, sched=default] median 8.40 ms/trial
+  scaling-unbound [all, 8 thr, sched=default] median 8.55 ms/trial
+  scaling-bound [all, 10 thr, sched=default] median 9.54 ms/trial
+  scaling-unbound [all, 10 thr, sched=default] median 8.64 ms/trial

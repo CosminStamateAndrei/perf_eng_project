@@ -1,0 +1,26 @@
+Generate Time:       0.19474
+Build Time:          0.24001
+Graph has 4194302 nodes and 64155725 undirected edges for degree: 15
+  big22-base [all, 128 thr, sched=default] median 12.14 ms/trial
+  big22-huge [all, 128 thr, sched=default] median 12.78 ms/trial
+  big22-pf8 [all, 128 thr, sched=default] median 11.96 ms/trial
+  big22-relabel [all, 128 thr, sched=default] median 6.67 ms/trial
+pe/scripts/batch_all.sh: line 49: perf: command not found
+pe/scripts/batch_all.sh: line 49: perf: command not found
+pe/scripts/batch_all.sh: line 49: perf: command not found
+pe/scripts/batch_all.sh: line 49: perf: command not found
+pe/scripts/batch_all.sh: line 49: perf: command not found
+pe/scripts/batch_all.sh: line 49: perf: command not found
+Generate Time:       0.86630
+Build Time:          0.93964
+Graph has 16777212 nodes and 260376710 undirected edges for degree: 15
+  big24-base [all, 128 thr, sched=default] median 38.22 ms/trial
+  big24-huge [all, 128 thr, sched=default] median 37.80 ms/trial
+  big24-pf8 [all, 128 thr, sched=default] median 37.04 ms/trial
+  big24-relabel [all, 128 thr, sched=default] median 33.28 ms/trial
+pe/scripts/batch_all.sh: line 49: perf: command not found
+pe/scripts/batch_all.sh: line 49: perf: command not found
+pe/scripts/batch_all.sh: line 49: perf: command not found
+pe/scripts/batch_all.sh: line 49: perf: command not found
+pe/scripts/batch_all.sh: line 49: perf: command not found
+pe/scripts/batch_all.sh: line 49: perf: command not found

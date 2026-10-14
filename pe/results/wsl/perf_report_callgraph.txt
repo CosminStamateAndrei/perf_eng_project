@@ -1,0 +1,273 @@
+# To display the perf.data header info, please use --header/--header-only options.
+#
+#
+# Total Lost Samples: 0
+#
+# Samples: 46K of event 'task-clock:ppp'
+# Event count (approx.): 9203640360
+#
+# Children      Self  Symbol                                                                                                                      IPC   [IPC Coverage]
+# ........  ........  ..........................................................................................................................  ....................
+#
+    89.45%     0.00%  [.] clone3                                                                                                                  -      -            
+            |          
+             --89.44%--start_thread
+                       |          
+                       |--43.68%--0x79820663179f
+                       |          |          
+                       |          |--32.26%--BUStep(CSRGraph<int, int, true> const&, pvector<int>&, Bitmap&, Bitmap&) [clone ._omp_fn.0]
+                       |          |          
+                       |          |--5.16%--InitParent(CSRGraph<int, int, true> const&) [clone ._omp_fn.0]
+                       |          |          
+                       |          |--2.91%--TDStep(CSRGraph<int, int, true> const&, pvector<int>&, SlidingQueue<int>&) [clone ._omp_fn.0]
+                       |          |          
+                       |          |--1.11%--BitmapToQueue(CSRGraph<int, int, true> const&, Bitmap const&, SlidingQueue<int>&) [clone ._omp_fn.0]
+                       |          |          
+                       |           --1.02%--QueueToBitmap(SlidingQueue<int> const&, Bitmap&) [clone ._omp_fn.0]
+                       |          
+                       |--25.45%--0x7982066317ac
+                       |          |          
+                       |           --23.69%--0x7982066348a2
+                       |          
+                        --18.75%--0x7982066346c2
+
+    89.44%     0.00%  [.] start_thread                                                                                                            -      -            
+            |          
+            |--43.68%--0x79820663179f
+            |          |          
+            |          |--32.26%--BUStep(CSRGraph<int, int, true> const&, pvector<int>&, Bitmap&, Bitmap&) [clone ._omp_fn.0]
+            |          |          
+            |          |--5.16%--InitParent(CSRGraph<int, int, true> const&) [clone ._omp_fn.0]
+            |          |          
+            |          |--2.91%--TDStep(CSRGraph<int, int, true> const&, pvector<int>&, SlidingQueue<int>&) [clone ._omp_fn.0]
+            |          |          
+            |          |--1.11%--BitmapToQueue(CSRGraph<int, int, true> const&, Bitmap const&, SlidingQueue<int>&) [clone ._omp_fn.0]
+            |          |          
+            |           --1.02%--QueueToBitmap(SlidingQueue<int> const&, Bitmap&) [clone ._omp_fn.0]
+            |          
+            |--25.45%--0x7982066317ac
+            |          |          
+            |           --23.69%--0x7982066348a2
+            |          
+             --18.75%--0x7982066346c2
+
+    43.68%     0.00%  [.] 0x000079820663179f                                                                                                      -      -            
+            |          
+            |--32.26%--BUStep(CSRGraph<int, int, true> const&, pvector<int>&, Bitmap&, Bitmap&) [clone ._omp_fn.0]
+            |          
+            |--5.16%--InitParent(CSRGraph<int, int, true> const&) [clone ._omp_fn.0]
+            |          
+            |--2.91%--TDStep(CSRGraph<int, int, true> const&, pvector<int>&, SlidingQueue<int>&) [clone ._omp_fn.0]
+            |          
+            |--1.11%--BitmapToQueue(CSRGraph<int, int, true> const&, Bitmap const&, SlidingQueue<int>&) [clone ._omp_fn.0]
+            |          
+             --1.02%--QueueToBitmap(SlidingQueue<int> const&, Bitmap&) [clone ._omp_fn.0]
+
+    35.81%    35.78%  [.] BUStep(CSRGraph<int, int, true> const&, pvector<int>&, Bitmap&, Bitmap&) [clone ._omp_fn.0]                             -      -            
+            |          
+            |--32.23%--clone3
+            |          start_thread
+            |          |          
+            |           --32.23%--0x79820663179f
+            |                     BUStep(CSRGraph<int, int, true> const&, pvector<int>&, Bitmap&, Bitmap&) [clone ._omp_fn.0]
+            |          
+             --3.55%--_start
+                       __libc_start_main@@GLIBC_2.34
+                       __libc_start_call_main
+                       main
+                       DOBFS(CSRGraph<int, int, true> const&, int, bool, int, int)
+                       GOMP_parallel
+                       BUStep(CSRGraph<int, int, true> const&, pvector<int>&, Bitmap&, Bitmap&) [clone ._omp_fn.0]
+
+    26.15%     0.00%  [.] 0x00007982066348a2                                                                                                      -      -            
+    26.14%    26.14%  [.] 0x00000000000258a2                                                                                                      -      -            
+            |          
+            |--23.69%--clone3
+            |          start_thread
+            |          0x7982066317ac
+            |          0x7982066348a2
+            |          
+             --2.46%--_start
+                       __libc_start_main@@GLIBC_2.34
+                       __libc_start_call_main
+                       main
+                       DOBFS(CSRGraph<int, int, true> const&, int, bool, int, int)
+                       0x7982066331d1
+                       0x7982066348a2
+
+    25.45%     0.00%  [.] 0x00007982066317ac                                                                                                      -      -            
+            |          
+             --23.69%--0x7982066348a2
+
+    20.53%     0.00%  [.] 0x00007982066346c2                                                                                                      -      -            
+    20.52%    20.52%  [.] 0x00000000000256c2                                                                                                      -      -            
+            |          
+            |--18.74%--clone3
+            |          start_thread
+            |          0x7982066346c2
+            |          
+             --1.78%--_start
+                       __libc_start_main@@GLIBC_2.34
+                       __libc_start_call_main
+                       main
+                       |          
+                        --1.73%--DOBFS(CSRGraph<int, int, true> const&, int, bool, int, int)
+                                  GOMP_parallel
+                                  0x7982066346c2
+
+    10.54%     0.00%  [.] _start                                                                                                                  -      -            
+            |
+            ---__libc_start_main@@GLIBC_2.34
+               __libc_start_call_main
+               |          
+                --10.54%--main
+                          |          
+                          |--9.33%--DOBFS(CSRGraph<int, int, true> const&, int, bool, int, int)
+                          |          |          
+                          |          |--6.66%--GOMP_parallel
+                          |          |          |          
+                          |          |          |--3.55%--BUStep(CSRGraph<int, int, true> const&, pvector<int>&, Bitmap&, Bitmap&) [clone ._omp_fn.0]
+                          |          |          |          
+                          |          |           --1.73%--0x7982066346c2
+                          |          |          
+                          |           --2.65%--0x7982066331d1
+                          |                     |          
+                          |                      --2.46%--0x7982066348a2
+                          |          
+                           --1.02%--BuilderBase<int, int, int, true>::MakeGraph()
+                                     Reader<int, int, int, true>::ReadSerializedGraph()
+
+    10.54%     0.00%  [.] __libc_start_main@@GLIBC_2.34                                                                                           -      -            
+            |
+            ---__libc_start_call_main
+               |          
+                --10.54%--main
+                          |          
+                          |--9.33%--DOBFS(CSRGraph<int, int, true> const&, int, bool, int, int)
+                          |          |          
+                          |          |--6.66%--GOMP_parallel
+                          |          |          |          
+                          |          |          |--3.55%--BUStep(CSRGraph<int, int, true> const&, pvector<int>&, Bitmap&, Bitmap&) [clone ._omp_fn.0]
+                          |          |          |          
+                          |          |           --1.73%--0x7982066346c2
+                          |          |          
+                          |           --2.65%--0x7982066331d1
+                          |                     |          
+                          |                      --2.46%--0x7982066348a2
+                          |          
+                           --1.02%--BuilderBase<int, int, int, true>::MakeGraph()
+                                     Reader<int, int, int, true>::ReadSerializedGraph()
+
+    10.54%     0.00%  [.] __libc_start_call_main                                                                                                  -      -            
+            |          
+             --10.54%--main
+                       |          
+                       |--9.33%--DOBFS(CSRGraph<int, int, true> const&, int, bool, int, int)
+                       |          |          
+                       |          |--6.66%--GOMP_parallel
+                       |          |          |          
+                       |          |          |--3.55%--BUStep(CSRGraph<int, int, true> const&, pvector<int>&, Bitmap&, Bitmap&) [clone ._omp_fn.0]
+                       |          |          |          
+                       |          |           --1.73%--0x7982066346c2
+                       |          |          
+                       |           --2.65%--0x7982066331d1
+                       |                     |          
+                       |                      --2.46%--0x7982066348a2
+                       |          
+                        --1.02%--BuilderBase<int, int, int, true>::MakeGraph()
+                                  Reader<int, int, int, true>::ReadSerializedGraph()
+
+    10.54%     0.00%  [.] main                                                                                                                    -      -            
+            |          
+            |--9.33%--DOBFS(CSRGraph<int, int, true> const&, int, bool, int, int)
+            |          |          
+            |          |--6.66%--GOMP_parallel
+            |          |          |          
+            |          |          |--3.55%--BUStep(CSRGraph<int, int, true> const&, pvector<int>&, Bitmap&, Bitmap&) [clone ._omp_fn.0]
+            |          |          |          
+            |          |           --1.73%--0x7982066346c2
+            |          |          
+            |           --2.65%--0x7982066331d1
+            |                     |          
+            |                      --2.46%--0x7982066348a2
+            |          
+             --1.02%--BuilderBase<int, int, int, true>::MakeGraph()
+                       Reader<int, int, int, true>::ReadSerializedGraph()
+
+     9.33%     0.00%  [.] DOBFS(CSRGraph<int, int, true> const&, int, bool, int, int)                                                             -      -            
+            |          
+             --9.33%--DOBFS(CSRGraph<int, int, true> const&, int, bool, int, int)
+                       |          
+                       |--6.66%--GOMP_parallel
+                       |          |          
+                       |          |--3.55%--BUStep(CSRGraph<int, int, true> const&, pvector<int>&, Bitmap&, Bitmap&) [clone ._omp_fn.0]
+                       |          |          
+                       |           --1.73%--0x7982066346c2
+                       |          
+                        --2.65%--0x7982066331d1
+                                  |          
+                                   --2.46%--0x7982066348a2
+
+     6.74%     0.00%  [.] GOMP_parallel                                                                                                           -      -            
+            |          
+             --6.73%--GOMP_parallel
+                       |          
+                       |--3.55%--BUStep(CSRGraph<int, int, true> const&, pvector<int>&, Bitmap&, Bitmap&) [clone ._omp_fn.0]
+                       |          
+                        --1.78%--0x7982066346c2
+
+     5.73%     5.71%  [.] InitParent(CSRGraph<int, int, true> const&) [clone ._omp_fn.0]                                                          -      -            
+            |          
+             --5.14%--clone3
+                       start_thread
+                       0x79820663179f
+                       InitParent(CSRGraph<int, int, true> const&) [clone ._omp_fn.0]
+
+     3.16%     3.10%  [.] TDStep(CSRGraph<int, int, true> const&, pvector<int>&, SlidingQueue<int>&) [clone ._omp_fn.0]                           -      -            
+            |          
+             --2.84%--clone3
+                       start_thread
+                       0x79820663179f
+                       TDStep(CSRGraph<int, int, true> const&, pvector<int>&, SlidingQueue<int>&) [clone ._omp_fn.0]
+
+     2.65%     0.00%  [.] 0x00007982066331d1                                                                                                      -      -            
+            |          
+             --2.46%--0x7982066348a2
+
+     1.25%     1.23%  [.] BitmapToQueue(CSRGraph<int, int, true> const&, Bitmap const&, SlidingQueue<int>&) [clone ._omp_fn.0]                    -      -            
+            |          
+             --1.10%--clone3
+                       start_thread
+                       0x79820663179f
+                       BitmapToQueue(CSRGraph<int, int, true> const&, Bitmap const&, SlidingQueue<int>&) [clone ._omp_fn.0]
+
+     1.15%     0.00%  [k] entry_SYSCALL_64_after_hwframe                                                                                          -      -            
+            |
+            ---do_syscall_64
+               |          
+                --1.15%--x64_sys_call
+
+     1.15%     0.00%  [k] do_syscall_64                                                                                                           -      -            
+            |          
+             --1.15%--do_syscall_64
+                       x64_sys_call
+
+     1.15%     0.00%  [k] x64_sys_call                                                                                                            -      -            
+     1.12%     1.12%  [.] QueueToBitmap(SlidingQueue<int> const&, Bitmap&) [clone ._omp_fn.0]                                                     -      -            
+            |          
+             --1.02%--clone3
+                       start_thread
+                       0x79820663179f
+                       QueueToBitmap(SlidingQueue<int> const&, Bitmap&) [clone ._omp_fn.0]
+
+     1.02%     1.02%  [.] DOBFS(CSRGraph<int, int, true> const&, int, bool, int, int) [clone ._omp_fn.0]                                          -      -            
+     1.02%     0.00%  [.] BuilderBase<int, int, int, true>::MakeGraph()                                                                           -      -            
+            |
+            ---Reader<int, int, int, true>::ReadSerializedGraph()
+
+     1.02%     0.00%  [.] Reader<int, int, int, true>::ReadSerializedGraph()                                                                      -      -            
+
+
+#
+# (Tip: Show current config key-value pairs: perf config --list)
+#

@@ -1,0 +1,35 @@
+  O1-O0 [all, 10 thr, sched=default] median 20.34 ms/trial
+Error:
+No supported events found.
+The cycles event is not supported.
+Error:
+No supported events found.
+The cycles event is not supported.
+  O1-O1 [all, 10 thr, sched=default] median 10.81 ms/trial
+Error:
+No supported events found.
+The cycles event is not supported.
+Error:
+No supported events found.
+The cycles event is not supported.
+  O1-O2 [all, 10 thr, sched=default] median 8.22 ms/trial
+Error:
+No supported events found.
+The cycles event is not supported.
+Error:
+No supported events found.
+The cycles event is not supported.
+  O1-O3 [all, 10 thr, sched=default] median 8.01 ms/trial
+Error:
+No supported events found.
+The cycles event is not supported.
+Error:
+No supported events found.
+The cycles event is not supported.
+  O1-native [all, 10 thr, sched=default] median 9.25 ms/trial
+Error:
+No supported events found.
+The cycles event is not supported.
+Error:
+No supported events found.
+The cycles event is not supported.

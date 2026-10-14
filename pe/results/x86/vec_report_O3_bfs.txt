@@ -1,0 +1,366 @@
+src/bfs.cc:60:19: missed: couldn't vectorize loop
+src/bfs.cc:60:19: missed: not vectorized: multiple nested loops.
+src/bfs.cc:59:46: missed: couldn't vectorize loop
+src/bfs.cc:59:46: missed: not vectorized: control flow in loop.
+src/bfs.cc:61:21: missed: couldn't vectorize loop
+src/bfs.cc:61:21: missed: not vectorized: control flow in loop.
+src/bfs.cc:51:11: note: vectorized 0 loops in function.
+src/bfs.cc:51:11: missed: statement clobbers memory: _22 = __builtin_GOMP_loop_nonmonotonic_dynamic_start (0, _20, 1, 1024, &.istart0.16, &.iend0.17);
+src/bfs.cc:51:11: missed: statement clobbers memory: _44 = __builtin_GOMP_loop_nonmonotonic_dynamic_next (&.istart0.16, &.iend0.17);
+src/bfs.cc:57:35: missed: statement clobbers memory: __atomic_fetch_add_8 (_45, prephitmp_134, 0);
+src/bfs.cc:51:11: missed: statement clobbers memory: __builtin_GOMP_loop_end_nowait ();
+src/bfs.cc:123:71: missed: couldn't vectorize loop
+src/bfs.cc:119:11: note: vectorized 0 loops in function.
+src/bfs.cc:154:7: missed: couldn't vectorize loop
+src/bfs.cc:154:17: note: ***** Analysis failed with vector mode V2DI
+src/bfs.cc:154:17: note: ***** Skipping vector mode V16QI, which would repeat the analysis for V2DI
+src/bfs.cc:149:11: note: vectorized 0 loops in function.
+src/bfs.cc:154:17: note: ***** Analysis failed with vector mode V2DI
+src/bfs.cc:154:17: note: ***** Skipping vector mode V16QI, which would repeat the analysis for V2DI
+src/bfs.cc:221:5: missed: couldn't vectorize loop
+src/bfs.cc:221:5: missed: not vectorized: control flow in loop.
+src/bfs.cc:219:11: note: vectorized 0 loops in function.
+src/bfs.cc:222:17: note: ***** Analysis failed with vector mode V2DI
+src/bfs.cc:222:17: note: ***** Skipping vector mode V16QI, which would repeat the analysis for V2DI
+src/bfs.cc:139:7: missed: couldn't vectorize loop
+src/bfs.cc:139:7: missed: not vectorized: control flow in loop.
+src/bfs.cc:133:11: note: vectorized 0 loops in function.
+src/bfs.cc:133:11: note: ***** Analysis failed with vector mode V2DI
+src/bfs.cc:133:11: note: ***** Skipping vector mode V16QI, which would repeat the analysis for V2DI
+src/bfs.cc:89:71: missed: couldn't vectorize loop
+src/bfs.cc:89:71: missed: not vectorized: control flow in loop.
+src/bfs.cc:100:36: missed: couldn't vectorize loop
+src/bfs.cc:100:36: missed: not vectorized: control flow in loop.
+src/bfs.cc:80:11: note: vectorized 0 loops in function.
+src/bfs.cc:87:35: missed: statement clobbers memory: __atomic_fetch_add_8 (_134, 0, 0);
+src/bfs.cc:87:35: missed: statement clobbers memory: __atomic_fetch_add_8 (_56, scout_count.31_57, 0);
+src/bfs.cc:47:9: note: vectorized 0 loops in function.
+src/bfs.cc:47:9: missed: statement clobbers memory: __builtin_GOMP_parallel (_Z6BUStepRK8CSRGraphIiiLb1EER7pvectorIiER6BitmapS7_._omp_fn.0, &.omp_data_o.14, 0, 0);
+src/bfs.cc:51:11: note: ***** Analysis succeeded with vector mode V2DI
+src/bfs.cc:51:11: note: SLPing BB part
+src/bfs.cc:51:11: note: Costing subgraph: 
+src/bfs.cc:51:11: note: node 0xf323838 (max_nunits=2, refcnt=1) vector(2) long unsigned int
+src/bfs.cc:51:11: note: op template: .omp_data_o.14.g = g_3(D);
+src/bfs.cc:51:11: note: 	stmt 0 .omp_data_o.14.g = g_3(D);
+src/bfs.cc:51:11: note: 	stmt 1 .omp_data_o.14.parent = parent_5(D);
+src/bfs.cc:51:11: note: 	stmt 2 .omp_data_o.14.front = front_7(D);
+src/bfs.cc:51:11: note: 	stmt 3 .omp_data_o.14.next = next_2(D);
+src/bfs.cc:51:11: note: 	children 0xf3238b8
+src/bfs.cc:51:11: note: node (external) 0xf3238b8 (max_nunits=1, refcnt=1) vector(2) long unsigned int
+src/bfs.cc:51:11: note: 	{ g_3(D), parent_5(D), front_7(D), next_2(D) }
+src/bfs.cc:51:11: note: Cost model analysis: 
+src/bfs.cc:51:11: note: Cost model analysis for part in loop 0:
+src/bfs.cc:51:11: missed: not vectorized: vectorization is not profitable.
+src/bfs.cc:51:11: note: ***** The result for vector mode V16QI would be the same
+src/bfs.cc:51:11: note: ***** Re-trying analysis with vector mode V8QI
+src/bfs.cc:51:11: note: ***** Analysis succeeded with vector mode V8QI
+src/bfs.cc:51:11: note: SLPing BB part
+src/bfs.cc:51:11: note: Costing subgraph: 
+src/bfs.cc:51:11: note: node 0xf323838 (max_nunits=1, refcnt=1) vector(1) long unsigned int
+src/bfs.cc:51:11: note: op template: .omp_data_o.14.g = g_3(D);
+src/bfs.cc:51:11: note: 	stmt 0 .omp_data_o.14.g = g_3(D);
+src/bfs.cc:51:11: note: 	stmt 1 .omp_data_o.14.parent = parent_5(D);
+src/bfs.cc:51:11: note: 	stmt 2 .omp_data_o.14.front = front_7(D);
+src/bfs.cc:51:11: note: 	stmt 3 .omp_data_o.14.next = next_2(D);
+src/bfs.cc:51:11: note: 	children 0xf3238b8
+src/bfs.cc:51:11: note: node (external) 0xf3238b8 (max_nunits=1, refcnt=1) vector(1) long unsigned int
+src/bfs.cc:51:11: note: 	{ g_3(D), parent_5(D), front_7(D), next_2(D) }
+src/bfs.cc:51:11: note: Cost model analysis: 
+src/bfs.cc:51:11: note: Cost model analysis for part in loop 0:
+src/bfs.cc:51:11: missed: not vectorized: vectorization is not profitable.
+src/bfs.cc:51:11: note: ***** Re-trying analysis with vector mode V4QI
+src/bfs.cc:51:11: note: ***** Analysis failed with vector mode V4QI
+src/bfs.cc:77:9: note: vectorized 0 loops in function.
+src/bfs.cc:77:9: missed: statement clobbers memory: __builtin_GOMP_parallel (_Z6TDStepRK8CSRGraphIiiLb1EER7pvectorIiER12SlidingQueueIiE._omp_fn.0, &.omp_data_o.30, 0, 0);
+src/bfs.cc:80:11: note: ***** Analysis succeeded with vector mode V2DI
+src/bfs.cc:80:11: note: SLPing BB part
+src/bfs.cc:80:11: note: Costing subgraph: 
+src/bfs.cc:80:11: note: node 0xf6d2c88 (max_nunits=2, refcnt=1) vector(2) long unsigned int
+src/bfs.cc:80:11: note: op template: .omp_data_o.30.g = g_2(D);
+src/bfs.cc:80:11: note: 	stmt 0 .omp_data_o.30.g = g_2(D);
+src/bfs.cc:80:11: note: 	stmt 1 .omp_data_o.30.parent = parent_4(D);
+src/bfs.cc:80:11: note: 	children 0xf6d2d08
+src/bfs.cc:80:11: note: node (external) 0xf6d2d08 (max_nunits=1, refcnt=1) vector(2) long unsigned int
+src/bfs.cc:80:11: note: 	{ g_2(D), parent_4(D) }
+src/bfs.cc:80:11: note: Cost model analysis: 
+src/bfs.cc:80:11: note: Cost model analysis for part in loop 0:
+src/bfs.cc:80:11: missed: not vectorized: vectorization is not profitable.
+src/bfs.cc:80:11: note: ***** The result for vector mode V16QI would be the same
+src/bfs.cc:80:11: note: ***** Re-trying analysis with vector mode V8QI
+src/bfs.cc:80:11: note: ***** Analysis succeeded with vector mode V8QI
+src/bfs.cc:80:11: note: SLPing BB part
+src/bfs.cc:80:11: note: Costing subgraph: 
+src/bfs.cc:80:11: note: node 0xf6d2c88 (max_nunits=1, refcnt=1) vector(1) long unsigned int
+src/bfs.cc:80:11: note: op template: .omp_data_o.30.g = g_2(D);
+src/bfs.cc:80:11: note: 	stmt 0 .omp_data_o.30.g = g_2(D);
+src/bfs.cc:80:11: note: 	stmt 1 .omp_data_o.30.parent = parent_4(D);
+src/bfs.cc:80:11: note: 	stmt 2 .omp_data_o.30.queue = queue_6(D);
+src/bfs.cc:80:11: note: 	children 0xf6d2d08
+src/bfs.cc:80:11: note: node (external) 0xf6d2d08 (max_nunits=1, refcnt=1) vector(1) long unsigned int
+src/bfs.cc:80:11: note: 	{ g_2(D), parent_4(D), queue_6(D) }
+src/bfs.cc:80:11: note: Cost model analysis: 
+src/bfs.cc:80:11: note: Cost model analysis for part in loop 0:
+src/bfs.cc:80:11: missed: not vectorized: vectorization is not profitable.
+src/bfs.cc:80:11: note: ***** Re-trying analysis with vector mode V4QI
+src/bfs.cc:80:11: note: ***** Analysis failed with vector mode V4QI
+src/bfs.cc:118:6: note: vectorized 0 loops in function.
+src/bfs.cc:118:6: missed: statement clobbers memory: __builtin_GOMP_parallel (_Z13QueueToBitmapRK12SlidingQueueIiER6Bitmap._omp_fn.0, &.omp_data_o.45, 0, 0);
+src/bfs.cc:119:11: note: ***** Analysis succeeded with vector mode V2DI
+src/bfs.cc:119:11: note: SLPing BB part
+src/bfs.cc:119:11: note: Costing subgraph: 
+src/bfs.cc:119:11: note: node 0xf323838 (max_nunits=2, refcnt=1) vector(2) long unsigned int
+src/bfs.cc:119:11: note: op template: .omp_data_o.45.queue = queue_2(D);
+src/bfs.cc:119:11: note: 	stmt 0 .omp_data_o.45.queue = queue_2(D);
+src/bfs.cc:119:11: note: 	stmt 1 .omp_data_o.45.bm = bm_4(D);
+src/bfs.cc:119:11: note: 	children 0xf3238b8
+src/bfs.cc:119:11: note: node (external) 0xf3238b8 (max_nunits=1, refcnt=1) vector(2) long unsigned int
+src/bfs.cc:119:11: note: 	{ queue_2(D), bm_4(D) }
+src/bfs.cc:119:11: note: Cost model analysis: 
+src/bfs.cc:119:11: note: Cost model analysis for part in loop 0:
+src/bfs.cc:119:11: missed: not vectorized: vectorization is not profitable.
+src/bfs.cc:119:11: note: ***** The result for vector mode V16QI would be the same
+src/bfs.cc:119:11: note: ***** Re-trying analysis with vector mode V8QI
+src/bfs.cc:119:11: note: ***** Analysis succeeded with vector mode V8QI
+src/bfs.cc:119:11: note: SLPing BB part
+src/bfs.cc:119:11: note: Costing subgraph: 
+src/bfs.cc:119:11: note: node 0xf323838 (max_nunits=1, refcnt=1) vector(1) long unsigned int
+src/bfs.cc:119:11: note: op template: .omp_data_o.45.queue = queue_2(D);
+src/bfs.cc:119:11: note: 	stmt 0 .omp_data_o.45.queue = queue_2(D);
+src/bfs.cc:119:11: note: 	stmt 1 .omp_data_o.45.bm = bm_4(D);
+src/bfs.cc:119:11: note: 	children 0xf3238b8
+src/bfs.cc:119:11: note: node (external) 0xf3238b8 (max_nunits=1, refcnt=1) vector(1) long unsigned int
+src/bfs.cc:119:11: note: 	{ queue_2(D), bm_4(D) }
+src/bfs.cc:119:11: note: Cost model analysis: 
+src/bfs.cc:119:11: note: Cost model analysis for part in loop 0:
+src/bfs.cc:119:11: missed: not vectorized: vectorization is not profitable.
+src/bfs.cc:119:11: note: ***** Re-trying analysis with vector mode V4QI
+src/bfs.cc:119:11: note: ***** Analysis failed with vector mode V4QI
+src/bfs.cc:131:6: note: vectorized 0 loops in function.
+src/bfs.cc:131:6: missed: statement clobbers memory: __builtin_GOMP_parallel (_Z13BitmapToQueueRK8CSRGraphIiiLb1EERK6BitmapR12SlidingQueueIiE._omp_fn.0, &.omp_data_o.56, 0, 0);
+src/bfs.cc:133:11: note: Costing subgraph: 
+src/bfs.cc:133:11: note: node 0xf6f2ca8 (max_nunits=2, refcnt=1) vector(2) long unsigned int
+src/bfs.cc:133:11: note: op template: .omp_data_o.56.g = g_2(D);
+src/bfs.cc:133:11: note: 	stmt 0 .omp_data_o.56.g = g_2(D);
+src/bfs.cc:133:11: note: 	stmt 1 .omp_data_o.56.bm = bm_4(D);
+src/bfs.cc:133:11: note: 	children 0xf6f2d28
+src/bfs.cc:133:11: note: node (external) 0xf6f2d28 (max_nunits=1, refcnt=1) vector(2) long unsigned int
+src/bfs.cc:133:11: note: 	{ g_2(D), bm_4(D) }
+src/bfs.cc:133:11: note: Cost model analysis: 
+src/bfs.cc:133:11: note: Cost model analysis for part in loop 0:
+src/bfs.cc:133:11: missed: not vectorized: vectorization is not profitable.
+src/bfs.cc:147:17: note: vectorized 0 loops in function.
+src/bfs.cc:147:17: missed: statement clobbers memory: __builtin_GOMP_parallel (_Z10InitParentRK8CSRGraphIiiLb1EE._omp_fn.0, &.omp_data_o.63, 0, 0);
+src/bfs.cc:149:11: note: Costing subgraph: 
+src/bfs.cc:149:11: note: node 0xf5c9e38 (max_nunits=2, refcnt=1) vector(2) long unsigned int
+src/bfs.cc:149:11: note: op template: .omp_data_o.63.g = g_3(D);
+src/bfs.cc:149:11: note: 	stmt 0 .omp_data_o.63.g = g_3(D);
+src/bfs.cc:149:11: note: 	stmt 1 .omp_data_o.63.parent = parent_5(D);
+src/bfs.cc:149:11: note: 	children 0xf5c9eb8
+src/bfs.cc:149:11: note: node (external) 0xf5c9eb8 (max_nunits=1, refcnt=1) vector(2) long unsigned int
+src/bfs.cc:149:11: note: 	{ g_3(D), parent_5(D) }
+src/bfs.cc:149:11: note: Cost model analysis: 
+src/bfs.cc:149:11: note: Cost model analysis for part in loop 0:
+src/bfs.cc:149:11: missed: not vectorized: vectorization is not profitable.
+src/bfs.cc:149:11: note: Costing subgraph: 
+src/bfs.cc:149:11: note: node 0xf5c9fb8 (max_nunits=1, refcnt=1) vector(1) long unsigned int
+src/bfs.cc:149:11: note: op template: .omp_data_o.63.g = g_3(D);
+src/bfs.cc:149:11: note: 	stmt 0 .omp_data_o.63.g = g_3(D);
+src/bfs.cc:149:11: note: 	stmt 1 .omp_data_o.63.parent = parent_5(D);
+src/bfs.cc:149:11: note: 	children 0xf5ca0b8
+src/bfs.cc:149:11: note: node (external) 0xf5ca0b8 (max_nunits=1, refcnt=1) vector(1) long unsigned int
+src/bfs.cc:149:11: note: 	{ g_3(D), parent_5(D) }
+src/bfs.cc:149:11: note: Cost model analysis: 
+src/bfs.cc:149:11: note: Cost model analysis for part in loop 0:
+src/bfs.cc:149:11: missed: not vectorized: vectorization is not profitable.
+src/bfs.cc:187:22: missed: couldn't vectorize loop
+src/bfs.cc:187:22: missed: not vectorized: control flow in loop.
+src/bfs.cc:195:7: missed: couldn't vectorize loop
+src/bfs.cc:195:7: missed: not vectorized: control flow in loop.
+src/bfs.cc:167:17: note: vectorized 0 loops in function.
+src/bfs.cc:167:17: missed: splitting region at control altering definition _333 = operator new [] (iftmp.78_332);
+src/bfs.cc:170:14: missed: not vectorized: statement can throw an exception: PrintStep (&D.82784, _1);
+src/bfs.cc:167:17: missed: statement clobbers memory: __builtin_GOMP_parallel (_Z10InitParentRK8CSRGraphIiiLb1EE._omp_fn.0, &.omp_data_o.63, 0, 0);
+src/bfs.cc:167:17: missed: not vectorized: statement can throw an exception: resx 14
+src/bfs.cc:149:11: note: Costing subgraph: 
+src/bfs.cc:149:11: note: node 0xf323838 (max_nunits=2, refcnt=1) vector(2) long unsigned int
+src/bfs.cc:149:11: note: op template: .omp_data_o.63.g = g_37(D);
+src/bfs.cc:149:11: note: 	stmt 0 .omp_data_o.63.g = g_37(D);
+src/bfs.cc:149:11: note: 	stmt 1 .omp_data_o.63.parent = parent_36(D);
+src/bfs.cc:149:11: note: 	children 0xf3238b8
+src/bfs.cc:149:11: note: node (external) 0xf3238b8 (max_nunits=1, refcnt=1) vector(2) long unsigned int
+src/bfs.cc:149:11: note: 	{ g_37(D), parent_36(D) }
+src/bfs.cc:149:11: note: Cost model analysis: 
+src/bfs.cc:149:11: note: Cost model analysis for part in loop 0:
+src/bfs.cc:149:11: missed: not vectorized: vectorization is not profitable.
+src/bfs.cc:167:17: missed: statement clobbers memory: __builtin_GOMP_parallel (_Z6TDStepRK8CSRGraphIiiLb1EER7pvectorIiER12SlidingQueueIiE._omp_fn.0, &.omp_data_o.30, 0, 0);
+src/bfs.cc:167:17: missed: not vectorized: statement can throw an exception: resx 49
+src/bfs.cc:167:17: missed: statement clobbers memory: __builtin_GOMP_parallel (_Z13QueueToBitmapRK12SlidingQueueIiER6Bitmap._omp_fn.0, &.omp_data_o.45, 0, 0);
+src/bfs.cc:167:17: missed: not vectorized: statement can throw an exception: resx 25
+src/bfs.cc:167:17: missed: statement clobbers memory: __builtin_GOMP_parallel (_Z6BUStepRK8CSRGraphIiiLb1EER7pvectorIiER6BitmapS7_._omp_fn.0, &.omp_data_o.14, 0, 0);
+src/bfs.cc:167:17: missed: not vectorized: statement can throw an exception: resx 33
+src/bfs.cc:167:17: missed: statement clobbers memory: __builtin_GOMP_parallel (_Z13BitmapToQueueRK8CSRGraphIiiLb1EERK6BitmapR12SlidingQueueIiE._omp_fn.0, &.omp_data_o.56, 0, 0);
+src/bfs.cc:167:17: missed: not vectorized: statement can throw an exception: resx 41
+src/bfs.cc:167:17: missed: not vectorized: statement can throw an exception: resx 21
+src/bfs.cc:80:11: note: Costing subgraph: 
+src/bfs.cc:80:11: note: node 0xf323ab8 (max_nunits=2, refcnt=1) vector(2) long unsigned int
+src/bfs.cc:80:11: note: op template: .omp_data_o.30.g = g_37(D);
+src/bfs.cc:80:11: note: 	stmt 0 .omp_data_o.30.g = g_37(D);
+src/bfs.cc:80:11: note: 	stmt 1 .omp_data_o.30.parent = parent_36(D);
+src/bfs.cc:80:11: note: 	children 0xf323838
+src/bfs.cc:80:11: note: node (external) 0xf323838 (max_nunits=1, refcnt=1) vector(2) long unsigned int
+src/bfs.cc:80:11: note: 	{ g_37(D), parent_36(D) }
+src/bfs.cc:80:11: note: Cost model analysis: 
+src/bfs.cc:80:11: note: Cost model analysis for part in loop 1:
+src/bfs.cc:80:11: missed: not vectorized: vectorization is not profitable.
+src/bfs.cc:119:11: note: Costing subgraph: 
+src/bfs.cc:119:11: note: node 0xf323a38 (max_nunits=2, refcnt=1) vector(2) long unsigned int
+src/bfs.cc:119:11: note: op template: .omp_data_o.45.queue = &queue;
+src/bfs.cc:119:11: note: 	stmt 0 .omp_data_o.45.queue = &queue;
+src/bfs.cc:119:11: note: 	stmt 1 .omp_data_o.45.bm = &front;
+src/bfs.cc:119:11: note: 	children 0xf323c38
+src/bfs.cc:119:11: note: node (external) 0xf323c38 (max_nunits=1, refcnt=1) vector(2) long unsigned int
+src/bfs.cc:119:11: note: 	{ &queue, &front }
+src/bfs.cc:119:11: note: Cost model analysis: 
+src/bfs.cc:119:11: note: Cost model analysis for part in loop 1:
+src/bfs.cc:51:11: note: Costing subgraph: 
+src/bfs.cc:51:11: note: node 0xf323f38 (max_nunits=2, refcnt=1) vector(2) long unsigned int
+src/bfs.cc:51:11: note: op template: .omp_data_o.14.g = g_37(D);
+src/bfs.cc:51:11: note: 	stmt 0 .omp_data_o.14.g = g_37(D);
+src/bfs.cc:51:11: note: 	stmt 1 .omp_data_o.14.parent = parent_36(D);
+src/bfs.cc:51:11: note: 	children 0xf323fb8
+src/bfs.cc:51:11: note: node (external) 0xf323fb8 (max_nunits=1, refcnt=1) vector(2) long unsigned int
+src/bfs.cc:51:11: note: 	{ g_37(D), parent_36(D) }
+src/bfs.cc:51:11: note: Cost model analysis: 
+src/bfs.cc:51:11: note: Cost model analysis for part in loop 2:
+src/bfs.cc:51:11: missed: not vectorized: vectorization is not profitable.
+src/bfs.cc:51:11: note: Costing subgraph: 
+src/bfs.cc:51:11: note: node 0xf324038 (max_nunits=2, refcnt=1) vector(2) long unsigned int
+src/bfs.cc:51:11: note: op template: .omp_data_o.14.front = &front;
+src/bfs.cc:51:11: note: 	stmt 0 .omp_data_o.14.front = &front;
+src/bfs.cc:51:11: note: 	stmt 1 .omp_data_o.14.next = &curr;
+src/bfs.cc:51:11: note: 	children 0xf3240b8
+src/bfs.cc:51:11: note: node (external) 0xf3240b8 (max_nunits=1, refcnt=1) vector(2) long unsigned int
+src/bfs.cc:51:11: note: 	{ &front, &curr }
+src/bfs.cc:51:11: note: Cost model analysis: 
+src/bfs.cc:51:11: note: Cost model analysis for part in loop 2:
+src/bfs.cc:167:17: missed: not vectorized: statement can throw an exception: resx 20
+src/bfs.cc:167:17: missed: not vectorized: statement can throw an exception: resx 19
+src/bfs.cc:207:18: note: ***** Analysis failed with vector mode V2DI
+src/bfs.cc:207:18: note: ***** Skipping vector mode V16QI, which would repeat the analysis for V2DI
+src/bfs.cc:207:18: missed: splitting region at dominance boundary bb62
+src/bfs.cc:207:18: note: ***** Analysis failed with vector mode VOID
+src/bfs.cc:207:18: missed: splitting region at dominance boundary bb27
+src/bfs.cc:187:10: note: ***** Analysis failed with vector mode V2DI
+src/bfs.cc:187:10: note: ***** Skipping vector mode V16QI, which would repeat the analysis for V2DI
+src/bfs.cc:187:10: missed: splitting region at dominance boundary bb103
+src/bfs.cc:167:17: missed: statement clobbers memory: __builtin_GOMP_parallel (_Z5DOBFSRK8CSRGraphIiiLb1EEibii._omp_fn.0, &.omp_data_o.75, 0, 0);
+src/bfs.cc:219:11: note: ***** Analysis succeeded with vector mode V2DI
+src/bfs.cc:219:11: note: SLPing BB part
+src/bfs.cc:219:11: note: Costing subgraph: 
+src/bfs.cc:219:11: note: node 0xf3244b8 (max_nunits=2, refcnt=1) vector(2) long unsigned int
+src/bfs.cc:219:11: note: op template: .omp_data_o.75.g = g_37(D);
+src/bfs.cc:219:11: note: 	stmt 0 .omp_data_o.75.g = g_37(D);
+src/bfs.cc:219:11: note: 	stmt 1 .omp_data_o.75.parent = parent_36(D);
+src/bfs.cc:219:11: note: 	children 0xf324538
+src/bfs.cc:219:11: note: node (external) 0xf324538 (max_nunits=1, refcnt=1) vector(2) long unsigned int
+src/bfs.cc:219:11: note: 	{ g_37(D), parent_36(D) }
+src/bfs.cc:219:11: note: Cost model analysis: 
+src/bfs.cc:219:11: note: Cost model analysis for part in loop 0:
+src/bfs.cc:219:11: missed: not vectorized: vectorization is not profitable.
+src/bfs.cc:219:11: note: ***** The result for vector mode V16QI would be the same
+src/bfs.cc:219:11: note: ***** Re-trying analysis with vector mode V8QI
+src/bfs.cc:219:11: note: ***** Analysis succeeded with vector mode V8QI
+src/bfs.cc:219:11: note: SLPing BB part
+src/bfs.cc:219:11: note: Costing subgraph: 
+src/bfs.cc:219:11: note: node 0xf3244b8 (max_nunits=1, refcnt=1) vector(1) long unsigned int
+src/bfs.cc:219:11: note: op template: .omp_data_o.75.g = g_37(D);
+src/bfs.cc:219:11: note: 	stmt 0 .omp_data_o.75.g = g_37(D);
+src/bfs.cc:219:11: note: 	stmt 1 .omp_data_o.75.parent = parent_36(D);
+src/bfs.cc:219:11: note: 	children 0xf324538
+src/bfs.cc:219:11: note: node (external) 0xf324538 (max_nunits=1, refcnt=1) vector(1) long unsigned int
+src/bfs.cc:219:11: note: 	{ g_37(D), parent_36(D) }
+src/bfs.cc:219:11: note: Cost model analysis: 
+src/bfs.cc:219:11: note: Cost model analysis for part in loop 0:
+src/bfs.cc:219:11: missed: not vectorized: vectorization is not profitable.
+src/bfs.cc:219:11: note: ***** Re-trying analysis with vector mode V4QI
+src/bfs.cc:219:11: note: ***** Analysis failed with vector mode V4QI
+src/bfs.cc:219:11: missed: splitting region at dominance boundary bb36
+src/bfs.cc:219:11: note: ***** Analysis failed with vector mode VOID
+src/bfs.cc:219:11: missed: splitting region at dominance boundary bb69
+src/bfs.cc:219:11: note: ***** Analysis failed with vector mode VOID
+src/bfs.cc:230:30: missed: couldn't vectorize loop
+src/bfs.cc:230:30: missed: not vectorized: control flow in loop.
+src/bfs.cc:227:6: note: vectorized 0 loops in function.
+src/bfs.cc:262:30: missed: couldn't vectorize loop
+src/bfs.cc:262:30: missed: not vectorized: control flow in loop.
+src/bfs.cc:272:19: missed: couldn't vectorize loop
+src/bfs.cc:272:19: missed: not vectorized: control flow in loop.
+src/bfs.cc:255:17: missed: couldn't vectorize loop
+src/bfs.cc:255:17: missed: not vectorized: control flow in loop.
+src/bfs.cc:246:6: note: vectorized 0 loops in function.
+src/bfs.cc:246:6: missed: splitting region at control altering definition _163 = operator new (_162);
+src/bfs.cc:246:6: missed: statement clobbers memory: __builtin_GOMP_parallel (_ZN7pvectorIiE4fillEi._omp_fn.0, &.omp_data_o.105, 0, 0);
+src/bfs.cc:272:35: note: ***** Analysis failed with vector mode V2DI
+src/bfs.cc:272:35: note: ***** Skipping vector mode V16QI, which would repeat the analysis for V2DI
+src/bfs.cc:272:35: missed: splitting region at dominance boundary bb132
+src/bfs.cc:272:35: note: ***** Analysis failed with vector mode VOID
+src/bfs.cc:272:35: missed: splitting region at loop 2 exit at bb155
+src/bfs.cc:272:35: note: ***** Analysis failed with vector mode V4SI
+src/bfs.cc:272:35: note: ***** Skipping vector mode V16QI, which would repeat the analysis for V4SI
+src/bfs.cc:272:35: missed: splitting region at dominance boundary bb79
+src/bfs.cc:272:35: note: ***** Analysis failed with vector mode VOID
+src/bfs.cc:272:35: missed: splitting region at control altering definition _57 = std::basic_ostream<char>::operator<< (&cout, _17);
+src/bfs.cc:283:60: missed: not vectorized: statement can throw an exception: _57 = std::basic_ostream<char>::operator<< (&cout, _17);
+src/bfs.cc:283:60: note: ***** Analysis failed with vector mode V2DI
+src/bfs.cc:283:60: note: ***** Skipping vector mode V16QI, which would repeat the analysis for V2DI
+src/bfs.cc:283:60: missed: splitting region at control altering definition _59 = std::basic_ostream<char>::operator<< (_57, SR.908_294);
+src/bfs.cc:283:70: missed: not vectorized: statement can throw an exception: _59 = std::basic_ostream<char>::operator<< (_57, SR.908_294);
+src/bfs.cc:283:70: note: ***** Analysis failed with vector mode VOID
+src/bfs.cc:283:70: missed: splitting region at control altering definition _253 = OBJ_TYPE_REF(_247;_236->6B) (_236, 10);
+src/bfs.cc:274:11: note: ***** Analysis failed with vector mode V4SI
+src/bfs.cc:274:11: note: ***** Skipping vector mode V16QI, which would repeat the analysis for V4SI
+src/bfs.cc:274:11: missed: splitting region at control altering definition _52 = std::basic_ostream<char>::operator<< (&cout, SR.908_331);
+src/bfs.cc:275:49: missed: not vectorized: statement can throw an exception: _52 = std::basic_ostream<char>::operator<< (&cout, SR.908_331);
+src/bfs.cc:275:49: note: ***** Analysis failed with vector mode VOID
+src/bfs.cc:275:49: missed: splitting region at control altering definition _54 = std::basic_ostream<char>::operator<< (_52, v_312);
+src/bfs.cc:275:58: missed: not vectorized: statement can throw an exception: _54 = std::basic_ostream<char>::operator<< (_52, v_312);
+src/bfs.cc:275:58: note: ***** Analysis failed with vector mode VOID
+src/bfs.cc:275:58: missed: splitting region at control altering definition _225 = OBJ_TYPE_REF(_219;_208->6B) (_208, 10);
+src/bfs.cc:246:6: note: ***** Analysis failed with vector mode V4SI
+src/bfs.cc:246:6: note: ***** The result for vector mode V16QI would be the same
+src/bfs.cc:246:6: note: ***** Re-trying analysis with vector mode V8QI
+src/bfs.cc:246:6: note: ***** Analysis failed with vector mode V8QI
+src/bfs.cc:246:6: note: ***** Re-trying analysis with vector mode V4QI
+src/bfs.cc:246:6: note: ***** Analysis failed with vector mode V4QI
+src/bfs.cc:246:6: missed: splitting region at loop 2 exit at bb160
+src/bfs.cc:262:30: note: ***** Analysis failed with vector mode VOID
+src/bfs.cc:262:30: missed: splitting region at dominance boundary bb27
+src/bfs.cc:262:30: note: ***** Analysis failed with vector mode VOID
+src/bfs.cc:262:30: missed: splitting region at dominance boundary bb134
+src/bfs.cc:262:30: note: ***** Analysis failed with vector mode VOID
+src/bfs.cc:262:30: missed: splitting region at dominance boundary bb34
+src/bfs.cc:262:30: note: ***** Analysis failed with vector mode VOID
+src/bfs.cc:262:30: missed: splitting region at control altering definition _197 = OBJ_TYPE_REF(_191;_180->6B) (_180, 10);
+src/bfs.cc:246:6: note: ***** Analysis failed with vector mode V2DI
+src/bfs.cc:246:6: note: ***** Skipping vector mode V16QI, which would repeat the analysis for V2DI
+src/bfs.cc:246:6: missed: splitting region at dominance boundary bb136
+src/bfs.cc:246:6: missed: not vectorized: statement can throw an exception: resx 3
+src/bfs.cc:295:5: note: vectorized 0 loops in function.
+src/bfs.cc:295:5: missed: splitting region at control altering definition g = BuilderBase<int, int, int>::MakeGraph (&b); [return slot optimization]
+src/bfs.cc:296:47: missed: statement clobbers memory: std::__cxx11::basic_string<char>::__ct_base .isra (&D.84332, "breadth-first search");
+src/bfs.cc:296:47: missed: not vectorized: statement can throw an exception: CLApp::CLApp (&cli, argc_7(D), argv_8(D), &D.84332);
+src/bfs.cc:300:25: missed: not vectorized: statement can throw an exception: g = BuilderBase<int, int, int>::MakeGraph (&b); [return slot optimization]
+src/bfs.cc:306:47: missed: statement clobbers memory: SourcePicker<CSRGraph<int> >::SourcePicker (&sp, &g, _1);
+src/bfs.cc:310:48: missed: statement clobbers memory: SourcePicker<CSRGraph<int> >::SourcePicker (&vsp, &g, _1);
+src/bfs.cc:308:52: missed: not vectorized: statement can throw an exception: result = DOBFS (&g, _187, _183, 15, 18); [return slot optimization]
+src/bfs.cc:295:5: missed: not vectorized: statement can throw an exception: resx 18
+src/bfs.cc:312:23: missed: not vectorized: statement can throw an exception: _268 = BFSVerifier (&g, _267, &result);
+src/bfs.cc:295:5: missed: not vectorized: statement can throw an exception: resx 20
+src/bfs.cc:295:5: missed: not vectorized: statement can throw an exception: resx 19
+src/bfs.cc:295:5: missed: not vectorized: statement can throw an exception: resx 21
+src/bfs.cc:295:5: missed: not vectorized: statement can throw an exception: resx 17
+src/bfs.cc:295:5: missed: not vectorized: statement can throw an exception: resx 22
+src/bfs.cc:295:5: missed: not vectorized: statement can throw an exception: resx 11
+src/bfs.cc:295:5: note: ***** Analysis failed with vector mode V2DI
+src/bfs.cc:295:5: note: ***** Skipping vector mode V16QI, which would repeat the analysis for V2DI
+src/bfs.cc:295:5: missed: splitting region at dominance boundary bb4

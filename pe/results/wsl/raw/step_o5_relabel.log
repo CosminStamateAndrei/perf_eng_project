@@ -1,0 +1,13 @@
+  O5-relabel [all, 10 thr, sched=default] median 3.57 ms/trial
+Error:
+No supported events found.
+The cache-references event is not supported.
+Error:
+No supported events found.
+The cache-references event is not supported.
+Error:
+No supported events found.
+The L1-dcache-loads event is not supported.
+Error:
+No supported events found.
+The L1-dcache-loads event is not supported.

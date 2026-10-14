@@ -1,0 +1,4 @@
+never/base: THP Rss:              140736 kB THP AnonHugePages:         0 kB 
+madvise/base: THP Rss:              140692 kB THP AnonHugePages:         0 kB 
+madvise/huge: THP Rss:              140708 kB THP AnonHugePages:    126976 kB 
+always/base: THP Rss:              140640 kB THP AnonHugePages:    126976 kB 

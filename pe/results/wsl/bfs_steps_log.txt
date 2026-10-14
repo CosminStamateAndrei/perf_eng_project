@@ -1,0 +1,15 @@
+Read Time:           0.07589
+Graph has 1048576 nodes and 15699691 undirected edges for degree: 14
+Source:               756607
+    i                0.00215
+   td          1     0.00155
+   td        134     0.00002
+   td     135456     0.00322
+    e                0.00230
+   bu     492512     0.00388
+   bu      17107     0.00246
+    c                0.00249
+   td         57     0.00116
+   td          0     0.00002
+Trial Time:          0.02008
+Average Time:        0.02008

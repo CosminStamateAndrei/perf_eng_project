@@ -1,0 +1,38 @@
+Available components and hardware information.
+--------------------------------------------------------------------------------
+PAPI version             : 7.1.0.0
+Operating system         : Linux 5.14.0-687.46.1.el9_8.x86_64
+Vendor string and code   : AuthenticAMD (2, 0x2)
+Model string and code    : AMD EPYC 7763 64-Core Processor (1, 0x1)
+CPU revision             : 1.000000
+CPUID                    : Family/Model/Stepping 25/1/1, 0x19/0x01/0x01
+CPU Max MHz              : 3530
+CPU Min MHz              : 1500
+Total cores              : 128
+SMT threads per core     : 1
+Cores per socket         : 64
+Sockets                  : 2
+Cores per NUMA region    : 64
+NUMA regions             : 2
+Running in a VM          : no
+Number Hardware Counters : 5
+Max Multiplex Counters   : 384
+Fast counter read (rdpmc): yes
+--------------------------------------------------------------------------------
+
+Compiled-in components:
+Name:   perf_event              Linux perf_event CPU counters
+Name:   perf_event_uncore       Linux perf_event CPU uncore and northbridge
+   \-> Disabled: Insufficient permissions for uncore access.  Set /proc/sys/kernel/perf_event_paranoid to 0 or run as root.
+Name:   sysdetect               System info detection component
+
+Active components:
+Name:   perf_event              Linux perf_event CPU counters
+                                Native: 145, Preset: 27, Counters: 5
+                                PMUs supported: perf, perf_raw, amd64_fam19h_zen3
+
+Name:   sysdetect               System info detection component
+                                Native: 0, Preset: 0, Counters: 0
+
+
+--------------------------------------------------------------------------------

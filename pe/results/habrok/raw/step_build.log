@@ -1,0 +1,60 @@
+Compiler: g++ (GCC) 11.5.0 20240719 (Red Hat 11.5.0-14)
+  bfs_base       -O3 
+  bfs_O0         -O0 
+  bfs_O1         -O1 
+  bfs_O2         -O2 
+  bfs_O3         -O3 
+  bfs_native     -O3 -march=native 
+  bfs_sched      -O3 -DOMP_RUNTIME_SCHED 
+  bfs_pf2        -O3 -DPF_DIST=2 
+  bfs_pf4        -O3 -DPF_DIST=4 
+  bfs_pf8        -O3 -DPF_DIST=8 
+  bfs_pf16       -O3 -DPF_DIST=16 
+  bfs_pf32       -O3 -DPF_DIST=32 
+  bfs_relabel    -O3 -DRELABEL 
+  bfs_a5b9       -O3 -DBFS_ALPHA=5 -DBFS_BETA=9 
+  bfs_a5b18      -O3 -DBFS_ALPHA=5 -DBFS_BETA=18 
+  bfs_a5b36      -O3 -DBFS_ALPHA=5 -DBFS_BETA=36 
+  bfs_a15b9      -O3 -DBFS_ALPHA=15 -DBFS_BETA=9 
+  bfs_a15b18     -O3 -DBFS_ALPHA=15 -DBFS_BETA=18 
+  bfs_a15b36     -O3 -DBFS_ALPHA=15 -DBFS_BETA=36 
+  bfs_a30b9      -O3 -DBFS_ALPHA=30 -DBFS_BETA=9 
+  bfs_a30b18     -O3 -DBFS_ALPHA=30 -DBFS_BETA=18 
+  bfs_a30b36     -O3 -DBFS_ALPHA=30 -DBFS_BETA=36 
+  bfs_thp        -O3 -DPE_THP_REPORT 
+  bfs_huge       -O3 -DUSE_HUGEPAGES -DPE_THP_REPORT 
+  bfs_pg         -O3 -pg 
+  (papi.h not found: skipping bfs_papi; install libpapi-dev or module load PAPI)
+All builds OK
+Generate Time:       0.09066
+Build Time:          0.15813
+Graph has 1048576 nodes and 15699691 undirected edges for degree: 14
+Compiler: g++ (GCC) 11.5.0 20240719 (Red Hat 11.5.0-14)
+  bfs_base       -O3 
+  bfs_O0         -O0 
+  bfs_O1         -O1 
+  bfs_O2         -O2 
+  bfs_O3         -O3 
+  bfs_native     -O3 -march=native 
+  bfs_sched      -O3 -DOMP_RUNTIME_SCHED 
+  bfs_pf2        -O3 -DPF_DIST=2 
+  bfs_pf4        -O3 -DPF_DIST=4 
+  bfs_pf8        -O3 -DPF_DIST=8 
+  bfs_pf16       -O3 -DPF_DIST=16 
+  bfs_pf32       -O3 -DPF_DIST=32 
+  bfs_relabel    -O3 -DRELABEL 
+  bfs_a5b9       -O3 -DBFS_ALPHA=5 -DBFS_BETA=9 
+  bfs_a5b18      -O3 -DBFS_ALPHA=5 -DBFS_BETA=18 
+  bfs_a5b36      -O3 -DBFS_ALPHA=5 -DBFS_BETA=36 
+  bfs_a15b9      -O3 -DBFS_ALPHA=15 -DBFS_BETA=9 
+  bfs_a15b18     -O3 -DBFS_ALPHA=15 -DBFS_BETA=18 
+  bfs_a15b36     -O3 -DBFS_ALPHA=15 -DBFS_BETA=36 
+  bfs_a30b9      -O3 -DBFS_ALPHA=30 -DBFS_BETA=9 
+  bfs_a30b18     -O3 -DBFS_ALPHA=30 -DBFS_BETA=18 
+  bfs_a30b36     -O3 -DBFS_ALPHA=30 -DBFS_BETA=36 
+  bfs_thp        -O3 -DPE_THP_REPORT 
+  bfs_huge       -O3 -DUSE_HUGEPAGES -DPE_THP_REPORT 
+  bfs_pg         -O3 -pg 
+  bfs_ft         -O3 -DPAR_FIRST_TOUCH 
+  bfs_papi       -O3 -DUSE_PAPI -lpapi
+All builds OK

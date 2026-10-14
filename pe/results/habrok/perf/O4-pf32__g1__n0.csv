@@ -1,0 +1,6 @@
+# pecount (perf_event_open; HW events user-space only), 5 run(s)
+
+3594774400,,cycles,26.50,,50.89
+413294975,,instructions,22.20,,46.09
+126143132,,branches,19.72,,41.63
+5999,,branch-misses,36.46,,37.26

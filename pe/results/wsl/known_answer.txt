@@ -1,0 +1,16 @@
+## alu 500000000
+Error:
+No supported events found.
+The instructions:u event is not supported.
+## alu 1000000000
+Error:
+No supported events found.
+The instructions:u event is not supported.
+## chase 1048576KB 10000000
+Error:
+No supported events found.
+The cache-misses:u event is not supported.
+## chase 1048576KB 20000000
+Error:
+No supported events found.
+The cache-misses:u event is not supported.

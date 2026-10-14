@@ -1,0 +1,174 @@
+# To display the perf.data header info, please use --header/--header-only options.
+#
+#
+# Total Lost Samples: 0
+#
+# Samples: 47K of event 'task-clock:ppp'
+# Event count (approx.): 9522104040
+#
+# Overhead  Symbol                                                                                                          IPC   [IPC Coverage]
+# ........  ..............................................................................................................  ....................
+#
+    34.03%  [.] BUStep(CSRGraph<int, int, true> const&, pvector<int>&, Bitmap&, Bitmap&) [clone ._omp_fn.0]                 -      -            
+            |          
+            |--30.64%--0x7f17069d179f
+            |          start_thread
+            |          clone3
+            |          
+             --3.39%--GOMP_parallel
+                       DOBFS(CSRGraph<int, int, true> const&, int, bool, int, int)
+                       main
+                       __libc_start_call_main
+                       __libc_start_main@@GLIBC_2.34
+                       _start
+
+    27.70%  [.] 0x00000000000258a2                                                                                          -      -            
+            |          
+            |--24.72%--0x7f17069d17ac
+            |          start_thread
+            |          clone3
+            |          
+             --2.99%--0x7f17069d31d1
+                       |          
+                        --2.89%--DOBFS(CSRGraph<int, int, true> const&, int, bool, int, int)
+                                  main
+                                  __libc_start_call_main
+                                  __libc_start_main@@GLIBC_2.34
+                                  _start
+
+    20.94%  [.] 0x00000000000256c2                                                                                          -      -            
+            |          
+            |--19.18%--start_thread
+            |          clone3
+            |          
+             --1.75%--GOMP_parallel
+                       |          
+                        --1.68%--DOBFS(CSRGraph<int, int, true> const&, int, bool, int, int)
+                                  main
+                                  __libc_start_call_main
+                                  __libc_start_main@@GLIBC_2.34
+                                  _start
+
+     5.35%  [.] InitParent(CSRGraph<int, int, true> const&) [clone ._omp_fn.0]                                              -      -            
+            |          
+            |--4.88%--0x7f17069d179f
+            |          start_thread
+            |          clone3
+            |          
+             --0.47%--GOMP_parallel
+                       DOBFS(CSRGraph<int, int, true> const&, int, bool, int, int)
+                       main
+                       __libc_start_call_main
+                       __libc_start_main@@GLIBC_2.34
+                       _start
+
+     2.93%  [.] TDStep(CSRGraph<int, int, true> const&, pvector<int>&, SlidingQueue<int>&) [clone ._omp_fn.0]               -      -            
+            |          
+             --2.70%--0x7f17069d179f
+                       start_thread
+                       clone3
+
+     1.36%  [k] clear_page_erms                                                                                             -      -            
+            |          
+             --1.36%--__alloc_frozen_pages_noprof
+                       alloc_pages_mpol
+                       |          
+                       |--0.71%--folio_alloc_noprof
+                       |          filemap_alloc_folio_noprof
+                       |          page_cache_ra_order
+                       |          page_cache_async_ra
+                       |          filemap_readahead.isra.0
+                       |          filemap_get_pages
+                       |          filemap_read
+                       |          generic_file_read_iter
+                       |          ext4_file_read_iter
+                       |          vfs_read
+                       |          ksys_read
+                       |          __x64_sys_read
+                       |          x64_sys_call
+                       |          do_syscall_64
+                       |          entry_SYSCALL_64_after_hwframe
+                       |          read
+                       |          std::basic_filebuf<char, std::char_traits<char> >::xsgetn(char*, long)
+                       |          std::istream::read(char*, long)
+                       |          Reader<int, int, int, true>::ReadSerializedGraph()
+                       |          BuilderBase<int, int, int, true>::MakeGraph()
+                       |          main
+                       |          __libc_start_call_main
+                       |          __libc_start_main@@GLIBC_2.34
+                       |          _start
+                       |          
+                        --0.65%--vma_alloc_folio_noprof
+                                  do_anonymous_page
+                                  __handle_mm_fault
+                                  handle_mm_fault
+                                  do_user_addr_fault
+                                  exc_page_fault
+                                  asm_exc_page_fault
+                                  |          
+                                   --0.55%--_copy_to_iter
+                                             copy_page_to_iter
+                                             filemap_read
+                                             generic_file_read_iter
+                                             ext4_file_read_iter
+                                             vfs_read
+                                             ksys_read
+                                             __x64_sys_read
+                                             x64_sys_call
+                                             do_syscall_64
+                                             entry_SYSCALL_64_after_hwframe
+                                             read
+                                             std::basic_filebuf<char, std::char_traits<char> >::xsgetn(char*, long)
+                                             std::istream::read(char*, long)
+                                             Reader<int, int, int, true>::ReadSerializedGraph()
+                                             BuilderBase<int, int, int, true>::MakeGraph()
+                                             main
+                                             __libc_start_call_main
+                                             __libc_start_main@@GLIBC_2.34
+                                             _start
+
+     1.13%  [.] BitmapToQueue(CSRGraph<int, int, true> const&, Bitmap const&, SlidingQueue<int>&) [clone ._omp_fn.0]        -      -            
+            |          
+             --1.03%--0x7f17069d179f
+                       start_thread
+                       clone3
+
+     1.12%  [.] QueueToBitmap(SlidingQueue<int> const&, Bitmap&) [clone ._omp_fn.0]                                         -      -            
+            |          
+             --1.01%--0x7f17069d179f
+                       start_thread
+                       clone3
+
+     0.93%  [.] DOBFS(CSRGraph<int, int, true> const&, int, bool, int, int) [clone ._omp_fn.0]                              -      -            
+            |          
+             --0.87%--0x7f17069d179f
+                       start_thread
+                       clone3
+
+     0.83%  [.] 0x00000000000258a6                                                                                          -      -            
+            |          
+             --0.74%--0x7f17069d17ac
+                       start_thread
+                       clone3
+
+     0.54%  [.] 0x00000000000256c6                                                                                          -      -            
+            |          
+             --0.51%--start_thread
+                       clone3
+
+     0.45%  [.] 0x00000000000258af                                                                                          -      -            
+            |          
+             --0.41%--0x7f17069d17ac
+                       start_thread
+                       clone3
+
+     0.37%  [.] 0x00000000000256cd                                                                                          -      -            
+            |          
+             --0.34%--start_thread
+                       clone3
+
+
+
+#
+# (Tip: To group events which need to be collected together for accuracy use {}: perf record -e {cycles,branches}' ...)
+#

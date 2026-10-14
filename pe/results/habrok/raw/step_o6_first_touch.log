@@ -1,0 +1,12 @@
+  O6-k20-base [all, 128 thr, sched=default] median 2.83 ms/trial
+  O6-k20-firsttouch [all, 128 thr, sched=default] median 2.67 ms/trial
+  O6-k20-base [all, 128 thr, sched=default] median 3.50 ms/trial
+  O6-k20-firsttouch [all, 128 thr, sched=default] median 2.28 ms/trial
+  O6-k22-base [all, 128 thr, sched=default] median 12.60 ms/trial
+  O6-k22-firsttouch [all, 128 thr, sched=default] median 11.25 ms/trial
+  O6-k22-base [all, 128 thr, sched=default] median 12.44 ms/trial
+  O6-k22-firsttouch [all, 128 thr, sched=default] median 11.12 ms/trial
+  O6-k24-base [all, 128 thr, sched=default] median 37.33 ms/trial
+  O6-k24-firsttouch [all, 128 thr, sched=default] median 38.43 ms/trial
+  O6-k24-base [all, 128 thr, sched=default] median 36.26 ms/trial
+  O6-k24-firsttouch [all, 128 thr, sched=default] median 37.02 ms/trial

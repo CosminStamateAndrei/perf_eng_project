@@ -1,0 +1,5 @@
+variant,event,n0,nN,delta,per_trial,per_edge
+base-all,context-switches,10.0,72.0,62.0,0.96875,6.170503610548768e-08
+base-all,cpu-migrations,0.0,0.0,0.0,0.0,0.0
+base-all,page-faults,34925.0,36442.0,1517.0,23.703125,1.5097828995487874e-06
+base-all,task-clock,506806176.0,10943138332.0,10436332156.0,163067689.9375,10.386681491852292

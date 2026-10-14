@@ -1,0 +1,6 @@
+# pecount (perf_event_open; HW events user-space only), 5 run(s)
+
+2219179114,,task-clock,10.85,,100.00
+1009,,page-faults,0.95,,100.00
+0,,context-switches,0.00,,100.00
+0,,cpu-migrations,0.00,,100.00

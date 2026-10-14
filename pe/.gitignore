@@ -1,0 +1,7 @@
+bin/
+results/x86_quick/
+results/**/raw/perf*.data*
+results/**/vec_report_*_full.txt
+gmon.out
+bench/stream.c
+plots/x86_quick/

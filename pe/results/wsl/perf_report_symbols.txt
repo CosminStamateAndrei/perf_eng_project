@@ -1,0 +1,123 @@
+# To display the perf.data header info, please use --header/--header-only options.
+#
+#
+# Total Lost Samples: 0
+#
+# Samples: 46K of event 'task-clock:ppp'
+# Event count (approx.): 9203640360
+#
+# Overhead  Symbol                                                                                                                      IPC   [IPC Coverage]
+# ........  ..........................................................................................................................  ....................
+#
+    35.78%  [.] BUStep(CSRGraph<int, int, true> const&, pvector<int>&, Bitmap&, Bitmap&) [clone ._omp_fn.0]                             -      -            
+            |          
+            |--32.23%--0x79820663179f
+            |          start_thread
+            |          clone3
+            |          
+             --3.55%--GOMP_parallel
+                       DOBFS(CSRGraph<int, int, true> const&, int, bool, int, int)
+                       main
+                       __libc_start_call_main
+                       __libc_start_main@@GLIBC_2.34
+                       _start
+
+    26.14%  [.] 0x00000000000258a2                                                                                                      -      -            
+            |          
+            |--23.69%--0x7982066317ac
+            |          start_thread
+            |          clone3
+            |          
+             --2.46%--0x7982066331d1
+                       DOBFS(CSRGraph<int, int, true> const&, int, bool, int, int)
+                       main
+                       __libc_start_call_main
+                       __libc_start_main@@GLIBC_2.34
+                       _start
+
+    20.52%  [.] 0x00000000000256c2                                                                                                      -      -            
+            |          
+            |--18.74%--start_thread
+            |          clone3
+            |          
+             --1.78%--GOMP_parallel
+                       |          
+                        --1.73%--DOBFS(CSRGraph<int, int, true> const&, int, bool, int, int)
+                                  main
+                                  __libc_start_call_main
+                                  __libc_start_main@@GLIBC_2.34
+                                  _start
+
+     5.71%  [.] InitParent(CSRGraph<int, int, true> const&) [clone ._omp_fn.0]                                                          -      -            
+            |          
+            |--5.14%--0x79820663179f
+            |          start_thread
+            |          clone3
+            |          
+             --0.57%--GOMP_parallel
+                       DOBFS(CSRGraph<int, int, true> const&, int, bool, int, int)
+                       main
+                       __libc_start_call_main
+                       __libc_start_main@@GLIBC_2.34
+                       _start
+
+     3.10%  [.] TDStep(CSRGraph<int, int, true> const&, pvector<int>&, SlidingQueue<int>&) [clone ._omp_fn.0]                           -      -            
+            |          
+             --2.84%--0x79820663179f
+                       start_thread
+                       clone3
+
+     1.23%  [.] BitmapToQueue(CSRGraph<int, int, true> const&, Bitmap const&, SlidingQueue<int>&) [clone ._omp_fn.0]                    -      -            
+            |          
+             --1.10%--0x79820663179f
+                       start_thread
+                       clone3
+
+     1.12%  [.] QueueToBitmap(SlidingQueue<int> const&, Bitmap&) [clone ._omp_fn.0]                                                     -      -            
+            |          
+             --1.02%--0x79820663179f
+                       start_thread
+                       clone3
+
+     1.02%  [.] DOBFS(CSRGraph<int, int, true> const&, int, bool, int, int) [clone ._omp_fn.0]                                          -      -            
+            |          
+             --0.91%--0x79820663179f
+                       start_thread
+                       clone3
+
+     0.62%  [.] 0x00000000000258a6                                                                                                      -      -            
+            |          
+             --0.56%--0x7982066317ac
+                       start_thread
+                       clone3
+
+     0.50%  [.] 0x00000000000256c6                                                                                                      -      -            
+            |          
+             --0.46%--start_thread
+                       clone3
+
+     0.47%  [.] 0x00000000000258af                                                                                                      -      -            
+            |          
+             --0.43%--0x7982066317ac
+                       start_thread
+                       clone3
+
+     0.41%  [.] 0x00000000000258ab                                                                                                      -      -            
+            |          
+             --0.36%--0x7982066317ac
+                       start_thread
+                       clone3
+
+     0.38%  [.] 0x00000000000256cd                                                                                                      -      -            
+            |          
+             --0.36%--start_thread
+                       clone3
+
+     0.33%  [.] 0x00000000000256c0                                                                                                      -      -            
+     0.31%  [.] 0x00000000000256cb                                                                                                      -      -            
+     0.30%  [.] 0x00000000000258a0                                                                                                      -      -            
+
+
+#
+# (Tip: For a higher level overview, try: perf report --sort comm,dso)
+#

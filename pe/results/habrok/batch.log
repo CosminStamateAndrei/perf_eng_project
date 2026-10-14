@@ -1,0 +1,86 @@
+[10:48:49] batch_all start (QUICK=0) on spreeuw21, kernel 5.14.0-687.46.1.el9_8.x86_64
+[10:48:49] logical CPUs 128, physical cores 128, P-cores [0-127] (128), E-cores [none]
+[10:48:49] === START setup
+[10:48:49] === FAIL  setup (see raw/step_setup.log)
+[10:48:49] === START sysinfo
+[10:48:49] === OK    sysinfo (0 s)
+[10:48:49] === START build
+[10:49:53] === OK    build (64 s)
+[10:49:53] === START verify
+[10:50:18] === OK    verify (25 s)
+[10:50:18] === START baseline
+[10:50:23] === OK    baseline (5 s)
+[10:50:23] === START timers
+[10:50:23] === FAIL  timers (see raw/step_timers.log)
+[10:50:23] === START counters_base
+[10:50:23] === FAIL  counters_base (see raw/step_counters_base.log)
+[10:50:23] === START profile
+[10:50:23] === FAIL  profile (see raw/step_profile.log)
+[10:50:23] === START gprof
+[10:50:25] === OK    gprof (2 s)
+[10:50:25] === START known_answer
+[10:50:25] === OK    known_answer (0 s)
+[10:50:25] === START papi
+[10:50:25] === FAIL  papi (see raw/step_papi.log)
+[10:50:25] === START latency
+[10:50:34] === OK    latency (9 s)
+[10:50:34] === START stream
+[10:50:37] === OK    stream (3 s)
+[10:50:37] === START scaling
+[10:51:04] === OK    scaling (27 s)
+[10:51:04] === START o1_compiler
+[10:51:14] === FAIL  o1_compiler (see raw/step_o1_compiler.log)
+[10:51:14] === START o2_sched
+[10:51:56] === OK    o2_sched (42 s)
+[10:51:56] === START o3_hugepages
+[10:52:00] === OK    o3_hugepages (4 s)
+[10:52:00] === START o4_prefetch
+[10:52:11] === FAIL  o4_prefetch (see raw/step_o4_prefetch.log)
+[10:52:11] === START o5_relabel
+[10:52:14] === FAIL  o5_relabel (see raw/step_o5_relabel.log)
+[10:52:14] === START alphabeta
+[10:52:32] === OK    alphabeta (18 s)
+[10:52:32] === START big_graph
+[10:53:55] === FAIL  big_graph (see raw/step_big_graph.log)
+[10:53:55] === START numa
+[10:53:56] === OK    numa (1 s)
+[10:53:56] === START package
+[10:53:56] results archived to /home5/s5524032/habrok_results_1053.tar.gz
+[10:53:56] GH_TOKEN not set: push manually or upload /home5/s5524032/habrok_results_1053.tar.gz
+[10:53:56] === OK    package (0 s)
+[10:53:56] batch_all done. Failed steps: setup timers counters_base profile papi o1_compiler o4_prefetch o5_relabel big_graph
+[11:42:41] batch_all start (QUICK=0) on spreeuw40, kernel 5.14.0-687.46.1.el9_8.x86_64
+[11:42:41] logical CPUs 128, physical cores 128, P-cores [0-127] (128), E-cores [none]
+[11:42:41] === START sysinfo
+[11:42:41] === OK    sysinfo (0 s)
+[11:42:41] === START build
+[11:43:49] === OK    build (68 s)
+[11:43:49] === START verify
+[11:44:15] === OK    verify (26 s)
+[11:44:15] === START timers
+[11:44:15] === OK    timers (0 s)
+[11:44:16] === START counters_base
+[11:44:53] === OK    counters_base (37 s)
+[11:44:53] === START known_answer
+[11:45:02] === OK    known_answer (9 s)
+[11:45:02] === START papi
+[11:45:10] === OK    papi (8 s)
+[11:45:10] === START mlp
+[11:45:15] === OK    mlp (5 s)
+[11:45:15] === START o1_compiler
+[11:45:29] === OK    o1_compiler (14 s)
+[11:45:29] === START o3_hugepages
+[11:45:34] === OK    o3_hugepages (5 s)
+[11:45:34] === START o4_prefetch
+[11:46:01] === OK    o4_prefetch (27 s)
+[11:46:01] === START o5_relabel
+[11:46:09] === OK    o5_relabel (8 s)
+[11:46:09] === START big_graph
+[11:47:34] === OK    big_graph (85 s)
+[11:47:34] === START o6_first_touch
+[11:48:28] === OK    o6_first_touch (54 s)
+[11:48:28] === START package
+[11:48:29] results archived to /home5/s5524032/habrok_results_1148.tar.gz
+[11:48:31] GH_TOKEN not set: push manually or upload /home5/s5524032/habrok_results_1148.tar.gz
+[11:48:31] === OK    package (3 s)
+[11:48:31] batch_all done. Failed steps: none

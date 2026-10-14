@@ -1,0 +1,15 @@
+  O1-O0 [all, 128 thr, sched=default] median 6.73 ms/trial
+pe/scripts/batch_all.sh: line 49: perf: command not found
+pe/scripts/batch_all.sh: line 49: perf: command not found
+  O1-O1 [all, 128 thr, sched=default] median 3.31 ms/trial
+pe/scripts/batch_all.sh: line 49: perf: command not found
+pe/scripts/batch_all.sh: line 49: perf: command not found
+  O1-O2 [all, 128 thr, sched=default] median 3.05 ms/trial
+pe/scripts/batch_all.sh: line 49: perf: command not found
+pe/scripts/batch_all.sh: line 49: perf: command not found
+  O1-O3 [all, 128 thr, sched=default] median 2.75 ms/trial
+pe/scripts/batch_all.sh: line 49: perf: command not found
+pe/scripts/batch_all.sh: line 49: perf: command not found
+  O1-native [all, 128 thr, sched=default] median 3.43 ms/trial
+pe/scripts/batch_all.sh: line 49: perf: command not found
+pe/scripts/batch_all.sh: line 49: perf: command not found

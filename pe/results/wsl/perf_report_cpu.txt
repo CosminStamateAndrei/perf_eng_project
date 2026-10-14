@@ -1,0 +1,17 @@
+# To display the perf.data header info, please use --header/--header-only options.
+#
+#
+# Total Lost Samples: 0
+#
+# Samples: 46K of event 'task-clock:ppp'
+# Event count (approx.): 9203640360
+#
+# Overhead  CPU
+# ........  ...
+#
+   100.00%  -001
+
+
+#
+# (Tip: Show current config key-value pairs: perf config --list)
+#

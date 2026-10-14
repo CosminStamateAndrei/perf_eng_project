@@ -1,0 +1,97 @@
+Flat profile:
+
+Each sample counts as 0.01 seconds.
+  %   cumulative   self              self     total           
+ time   seconds   seconds    calls  ms/call  ms/call  name    
+100.00      1.14     1.14        2   570.00   570.00  frame_dummy
+  0.00      1.14     0.00       66     0.00     0.00  PrintTime(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, double)
+  0.00      1.14     0.00       64     0.00     0.00  DOBFS(CSRGraph<int, int, true> const&, int, bool, int, int)
+  0.00      1.14     0.00       12     0.00     0.00  CLBase::AddHelpLine(char, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >)
+  0.00      1.14     0.00        5     0.00     0.00  void std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::_M_realloc_insert<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >(__gnu_cxx::__normal_iterator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >*, std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&&)
+  0.00      1.14     0.00        2     0.00     0.00  SourcePicker<CSRGraph<int, int, true> >::SourcePicker(CSRGraph<int, int, true> const&, int)
+  0.00      1.14     0.00        1     0.00     0.00  BuilderBase<int, int, int, true>::MakeGraph()
+  0.00      1.14     0.00        1     0.00     0.00  CLApp::CLApp(int, char**, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >)
+  0.00      1.14     0.00        1     0.00     0.00  CLBase::CLBase(int, char**, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >)
+  0.00      1.14     0.00        1     0.00     0.00  CLBase::~CLBase()
+  0.00      1.14     0.00        1     0.00     0.00  Reader<int, int, int, true>::ReadSerializedGraph()
+  0.00      1.14     0.00        1     0.00     0.00  CSRGraph<int, int, true>::ReleaseResources()
+  0.00      1.14     0.00        1     0.00     0.00  CSRGraph<int, int, true>::PrintStats() const
+  0.00      1.14     0.00        1     0.00     0.00  std::mersenne_twister_engine<unsigned long, 64ul, 312ul, 156ul, 31ul, 13043109905998158313ul, 29ul, 6148914691236517205ul, 17ul, 8202884508482404352ul, 37ul, 18444473444759240704ul, 43ul, 6364136223846793005ul>::_M_gen_rand()
+
+			Call graph
+
+
+granularity: each sample hit covers 4 byte(s) for 0.88% of 1.14 seconds
+
+index % time    self  children    called     name
+                1.14    0.00       2/2           main [2]
+[1]    100.0    1.14    0.00       2         frame_dummy [1]
+-----------------------------------------------
+                                                 <spontaneous>
+[2]    100.0    0.00    1.14                 main [2]
+                1.14    0.00       2/2           frame_dummy [1]
+                0.00    0.00      65/66          PrintTime(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, double) [8]
+                0.00    0.00      64/64          DOBFS(CSRGraph<int, int, true> const&, int, bool, int, int) [9]
+                0.00    0.00       2/2           SourcePicker<CSRGraph<int, int, true> >::SourcePicker(CSRGraph<int, int, true> const&, int) [12]
+                0.00    0.00       1/1           CLApp::CLApp(int, char**, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) [14]
+                0.00    0.00       1/1           BuilderBase<int, int, int, true>::MakeGraph() [13]
+                0.00    0.00       1/1           CSRGraph<int, int, true>::PrintStats() const [19]
+                0.00    0.00       1/1           CSRGraph<int, int, true>::ReleaseResources() [18]
+                0.00    0.00       1/1           CLBase::~CLBase() [16]
+                0.00    0.00       1/1           std::mersenne_twister_engine<unsigned long, 64ul, 312ul, 156ul, 31ul, 13043109905998158313ul, 29ul, 6148914691236517205ul, 17ul, 8202884508482404352ul, 37ul, 18444473444759240704ul, 43ul, 6364136223846793005ul>::_M_gen_rand() [20]
+-----------------------------------------------
+                0.00    0.00       1/66          Reader<int, int, int, true>::ReadSerializedGraph() [17]
+                0.00    0.00      65/66          main [2]
+[8]      0.0    0.00    0.00      66         PrintTime(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, double) [8]
+-----------------------------------------------
+                0.00    0.00      64/64          main [2]
+[9]      0.0    0.00    0.00      64         DOBFS(CSRGraph<int, int, true> const&, int, bool, int, int) [9]
+-----------------------------------------------
+                0.00    0.00       5/12          CLApp::CLApp(int, char**, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) [14]
+                0.00    0.00       7/12          CLBase::CLBase(int, char**, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) [15]
+[10]     0.0    0.00    0.00      12         CLBase::AddHelpLine(char, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) [10]
+                0.00    0.00       5/5           void std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::_M_realloc_insert<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >(__gnu_cxx::__normal_iterator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >*, std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&&) [11]
+-----------------------------------------------
+                0.00    0.00       5/5           CLBase::AddHelpLine(char, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) [10]
+[11]     0.0    0.00    0.00       5         void std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::_M_realloc_insert<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >(__gnu_cxx::__normal_iterator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >*, std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&&) [11]
+-----------------------------------------------
+                0.00    0.00       2/2           main [2]
+[12]     0.0    0.00    0.00       2         SourcePicker<CSRGraph<int, int, true> >::SourcePicker(CSRGraph<int, int, true> const&, int) [12]
+-----------------------------------------------
+                0.00    0.00       1/1           main [2]
+[13]     0.0    0.00    0.00       1         BuilderBase<int, int, int, true>::MakeGraph() [13]
+                0.00    0.00       1/1           Reader<int, int, int, true>::ReadSerializedGraph() [17]
+-----------------------------------------------
+                0.00    0.00       1/1           main [2]
+[14]     0.0    0.00    0.00       1         CLApp::CLApp(int, char**, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) [14]
+                0.00    0.00       5/12          CLBase::AddHelpLine(char, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) [10]
+                0.00    0.00       1/1           CLBase::CLBase(int, char**, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) [15]
+-----------------------------------------------
+                0.00    0.00       1/1           CLApp::CLApp(int, char**, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) [14]
+[15]     0.0    0.00    0.00       1         CLBase::CLBase(int, char**, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) [15]
+                0.00    0.00       7/12          CLBase::AddHelpLine(char, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) [10]
+-----------------------------------------------
+                0.00    0.00       1/1           main [2]
+[16]     0.0    0.00    0.00       1         CLBase::~CLBase() [16]
+-----------------------------------------------
+                0.00    0.00       1/1           BuilderBase<int, int, int, true>::MakeGraph() [13]
+[17]     0.0    0.00    0.00       1         Reader<int, int, int, true>::ReadSerializedGraph() [17]
+                0.00    0.00       1/66          PrintTime(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, double) [8]
+-----------------------------------------------
+                0.00    0.00       1/1           main [2]
+[18]     0.0    0.00    0.00       1         CSRGraph<int, int, true>::ReleaseResources() [18]
+-----------------------------------------------
+                0.00    0.00       1/1           main [2]
+[19]     0.0    0.00    0.00       1         CSRGraph<int, int, true>::PrintStats() const [19]
+-----------------------------------------------
+                0.00    0.00       1/1           main [2]
+[20]     0.0    0.00    0.00       1         std::mersenne_twister_engine<unsigned long, 64ul, 312ul, 156ul, 31ul, 13043109905998158313ul, 29ul, 6148914691236517205ul, 17ul, 8202884508482404352ul, 37ul, 18444473444759240704ul, 43ul, 6364136223846793005ul>::_M_gen_rand() [20]
+-----------------------------------------------
+
+Index by function name
+
+   [9] DOBFS(CSRGraph<int, int, true> const&, int, bool, int, int) [10] CLBase::AddHelpLine(char, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) [19] CSRGraph<int, int, true>::PrintStats() const
+   [8] PrintTime(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, double) [15] CLBase::CLBase(int, char**, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) [20] std::mersenne_twister_engine<unsigned long, 64ul, 312ul, 156ul, 31ul, 13043109905998158313ul, 29ul, 6148914691236517205ul, 17ul, 8202884508482404352ul, 37ul, 18444473444759240704ul, 43ul, 6364136223846793005ul>::_M_gen_rand()
+  [13] BuilderBase<int, int, int, true>::MakeGraph() [16] CLBase::~CLBase() [11] void std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::_M_realloc_insert<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >(__gnu_cxx::__normal_iterator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >*, std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&&)
+  [12] SourcePicker<CSRGraph<int, int, true> >::SourcePicker(CSRGraph<int, int, true> const&, int) [17] Reader<int, int, int, true>::ReadSerializedGraph() [1] frame_dummy
+  [14] CLApp::CLApp(int, char**, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) [18] CSRGraph<int, int, true>::ReleaseResources()

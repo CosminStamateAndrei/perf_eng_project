@@ -1,0 +1,6 @@
+static 8/8 PASS
+static,1000 4/8 PASS
+dynamic,100 0/8 PASS
+guided 0/8 PASS
+dynamic,64 8/8 PASS
+dynamic,1024 8/8 PASS

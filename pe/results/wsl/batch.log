@@ -1,0 +1,56 @@
+[10:39:37] batch_all start (QUICK=0) on DESKTOP-QNAF4F0, kernel 6.18.54.1-microsoft-standard-WSL2
+[10:39:37] logical CPUs 10, physical cores 10, P-cores [0-9] (10), E-cores [none]
+[10:39:37] === START setup
+[10:39:37] === OK    setup (0 s)
+[10:39:37] === START sysinfo
+[10:39:38] === OK    sysinfo (1 s)
+[10:39:38] === START build
+[10:42:20] === OK    build (162 s)
+[10:42:20] === START verify
+[10:42:48] === OK    verify (28 s)
+[10:42:48] === START baseline
+[10:42:55] === OK    baseline (7 s)
+[10:42:55] === START timers
+[10:43:00] === OK    timers (5 s)
+[10:43:00] === START counters_base
+[10:43:07] === FAIL  counters_base (see raw/step_counters_base.log)
+[10:43:07] === START profile
+[10:54:19] === OK    profile (672 s)
+[10:54:19] === START gprof
+[10:54:22] === OK    gprof (3 s)
+[10:54:22] === START known_answer
+[10:54:22] === OK    known_answer (0 s)
+[10:54:22] === START papi
+[10:54:22] === FAIL  papi (see raw/step_papi.log)
+[10:54:22] === START latency
+[10:54:58] === OK    latency (36 s)
+[10:54:58] === START stream
+[10:55:14] === OK    stream (16 s)
+[10:55:14] === START scaling
+[10:55:54] === OK    scaling (40 s)
+[10:55:54] === START o1_compiler
+[10:56:07] === FAIL  o1_compiler (see raw/step_o1_compiler.log)
+[10:56:07] === START o2_sched
+[10:57:10] === OK    o2_sched (63 s)
+[10:57:10] === START o3_hugepages
+[10:57:20] === OK    o3_hugepages (10 s)
+[10:57:20] === START o4_prefetch
+[10:57:32] === FAIL  o4_prefetch (see raw/step_o4_prefetch.log)
+[10:57:32] === START o5_relabel
+[10:57:36] === FAIL  o5_relabel (see raw/step_o5_relabel.log)
+[10:57:36] === START alphabeta
+[10:58:04] === OK    alphabeta (28 s)
+[10:58:04] === START big_graph
+[10:59:05] === FAIL  big_graph (see raw/step_big_graph.log)
+[10:59:05] === START numa
+[10:59:06] === OK    numa (1 s)
+[10:59:06] === START package
+[10:59:06] results archived to /root/wsl_results_1059.tar.gz
+[10:59:06] GH_TOKEN not set: push manually or upload /root/wsl_results_1059.tar.gz
+[10:59:06] === OK    package (0 s)
+[10:59:06] batch_all done. Failed steps: counters_base papi o1_compiler o4_prefetch o5_relabel big_graph
+[11:29:15] batch_all start (QUICK=0) on DESKTOP-QNAF4F0, kernel 6.18.54.1-microsoft-standard-WSL2
+[11:29:15] logical CPUs 10, physical cores 10, P-cores [0-9] (10), E-cores [none]
+[11:29:15] === START mlp
+[11:29:32] === OK    mlp (17 s)
+[11:29:32] batch_all done. Failed steps: none

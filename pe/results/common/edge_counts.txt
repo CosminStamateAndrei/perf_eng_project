@@ -1,0 +1,773 @@
+## kron20 bfs_count
+Graph has 1048576 nodes and 15699691 undirected edges for degree: 14
+   td          1     0.01228
+   td        134     0.01863
+   td     135456     0.01423
+    e                0.01074
+   bu     492512     0.02394
+   bu      17107     0.02307
+    c                0.00602
+   td         57     0.01104
+   td          0     0.01764
+EdgeCount td_edges 397610 bu_edges 581215 bu_vertices 1333456
+Verification:           PASS
+Verification Time:   0.24171
+   td          1     0.02107
+   td        418     0.01318
+   td     229323     0.01295
+    e                0.00847
+   bu     407930     0.01617
+   bu       7563     0.01590
+    c                0.01147
+   td         32     0.01351
+   td          0     0.00599
+EdgeCount td_edges 1051871 bu_edges 442494 bu_vertices 1229736
+Verification:           PASS
+Verification Time:   0.23145
+   td        141     0.00001
+   td     133917     0.00119
+    e                0.00034
+   bu     493740     0.00251
+   bu      17412     0.00979
+    c                0.00054
+   td         57     0.00056
+   td          0     0.00081
+EdgeCount td_edges 382321 bu_edges 584575 bu_vertices 1335294
+Verification:           PASS
+Verification Time:   0.16928
+   td        123     0.00001
+   td     148579     0.00114
+    e                0.00032
+   bu     481305     0.00244
+   bu      15212     0.00054
+    c                0.00022
+   td         48     0.00280
+   td          0     0.00005
+EdgeCount td_edges 431582 bu_edges 558971 bu_vertices 1318441
+Verification:           PASS
+Verification Time:   0.19651
+   td         12     0.01890
+   td      18988     0.01180
+    e                0.01892
+   bu     531118     0.01972
+   bu      94716     0.02521
+   bu        430     0.02503
+    c                0.00787
+   td          3     0.01648
+   td          0     0.01777
+EdgeCount td_edges 23974 bu_edges 1152386 bu_vertices 1931773
+Verification:           PASS
+Verification Time:   0.15549
+   td          1     0.01586
+   td       1350     0.01264
+    e                0.01269
+   bu     334688     0.04175
+   bu     305926     0.02928
+   bu       3288     0.02093
+    c                0.02055
+   td         14     0.01168
+   td          0     0.01946
+EdgeCount td_edges 4719 bu_edges 3519179 bu_vertices 2166370
+Verification:           PASS
+Verification Time:   0.16876
+   td          2     0.01867
+   td       1664     0.01364
+    e                0.00885
+   bu     361923     0.02418
+   bu     279035     0.01603
+   bu       2634     0.02099
+    c                0.00526
+   td          9     0.01322
+   td          0     0.01689
+EdgeCount td_edges 4393 bu_edges 3192645 bu_vertices 2137846
+Verification:           PASS
+Verification Time:   0.23011
+   td         18     0.00308
+   td      39732     0.00371
+    e                0.00428
+   bu     547164     0.01746
+   bu      58128     0.00110
+    c                0.00048
+   td        223     0.00048
+   td          2     0.00001
+   td          0     0.00000
+EdgeCount td_edges 125470 bu_edges 902838 bu_vertices 1470486
+Verification:           PASS
+Verification Time:   0.16955
+   td         15     0.00001
+   td      33394     0.00031
+    e                0.00007
+   bu     545341     0.01080
+   bu      66254     0.00265
+   bu        262     0.00065
+    c                0.00021
+   td          1     0.00008
+   td          0     0.00002
+EdgeCount td_edges 46754 bu_edges 952572 bu_vertices 1888562
+Verification:           PASS
+Verification Time:   0.19473
+   td        427     0.00001
+   td     243581     0.00258
+    e                0.00058
+   bu     394448     0.00257
+   bu       6784     0.00212
+    c                0.00132
+   td         27     0.00205
+   td          0     0.00002
+EdgeCount td_edges 1158558 bu_edges 424713 bu_vertices 1214686
+Verification:           PASS
+Verification Time:   0.16208
+   td        136     0.00001
+   td     156990     0.00199
+    e                0.00035
+   bu     474086     0.00230
+   bu      14007     0.00054
+    c                0.00022
+   td         48     0.00010
+   td          0     0.00000
+EdgeCount td_edges 460882 bu_edges 544750 bu_vertices 1308812
+Verification:           PASS
+Verification Time:   0.14961
+   td        132     0.00001
+   td     153891     0.00154
+    e                0.00038
+   bu     476789     0.00399
+   bu      14397     0.00145
+    c                0.00022
+   td         57     0.00017
+   td          1     0.00000
+   td          0     0.00000
+EdgeCount td_edges 440606 bu_edges 549774 bu_vertices 1312315
+Verification:           PASS
+Verification Time:   0.14691
+   td          1     0.00001
+   td       3807     0.00015
+    e                0.00001
+   bu     431459     0.00375
+   bu     208590     0.00142
+   bu       1406     0.00090
+    c                0.00024
+   td          4     0.00002
+   td          0     0.00000
+EdgeCount td_edges 5235 bu_edges 2070074 bu_vertices 2062793
+Verification:           PASS
+Verification Time:   0.15901
+   td          5     0.00001
+   td      15515     0.00011
+    e                0.00003
+   bu     520868     0.00297
+   bu     108373     0.00171
+   bu        503     0.00049
+    c                0.00167
+   td          3     0.00141
+   td          0     0.00070
+EdgeCount td_edges 18284 bu_edges 1249549 bu_vertices 1949056
+Verification:           PASS
+Verification Time:   0.14039
+   td          3     0.00001
+   td      11829     0.00023
+    e                0.00003
+   bu     507541     0.00312
+   bu     125270     0.00152
+   bu        622     0.00053
+    c                0.00020
+   td          2     0.00001
+   td          0     0.00000
+EdgeCount td_edges 13033 bu_edges 1382785 bu_vertices 1969877
+Verification:           PASS
+Verification Time:   0.15290
+   td         14     0.00001
+   td      19817     0.00025
+    e                0.00005
+   bu     532547     0.00410
+   bu      92479     0.00213
+   bu        408     0.00090
+    c                0.00020
+   td          2     0.00001
+   td          0     0.00000
+EdgeCount td_edges 25673 bu_edges 1138229 bu_vertices 1928659
+Verification:           PASS
+Verification Time:   0.14209
+## kron20 bfs_count_relabel
+Graph has 1048576 nodes and 15699691 undirected edges for degree: 14
+   td          5     0.00072
+   td      16134     0.00016
+    e                0.00005
+   bu     523047     0.00193
+   bu     105576     0.00028
+   bu        502     0.00009
+    c                0.00020
+   td          3     0.00001
+   td          0     0.00000
+EdgeCount td_edges 19026 bu_edges 812124 bu_vertices 1945638
+Verification:           PASS
+Verification Time:   0.06150
+   td          2     0.00001
+   td        103     0.00000
+   td      84491     0.00096
+    e                0.00023
+   bu     531396     0.00110
+   bu      29169     0.00014
+    c                0.00062
+   td        105     0.00007
+   td          1     0.00000
+   td          0     0.00000
+EdgeCount td_edges 218202 bu_edges 596571 bu_vertices 1396562
+Verification:           PASS
+Verification Time:   0.06893
+   td         44     0.00009
+   td      74617     0.00043
+    e                0.00022
+   bu     536833     0.00120
+   bu      33651     0.00016
+    c                0.00071
+   td        122     0.00008
+   td          0     0.00000
+EdgeCount td_edges 172507 bu_edges 612859 bu_vertices 1410995
+Verification:           PASS
+Verification Time:   0.12253
+   td          9     0.00001
+   td       6690     0.00014
+    e                0.00005
+   bu     471550     0.00528
+   bu     166053     0.00726
+   bu        962     0.00752
+    c                0.00198
+   td          3     0.00002
+   td          0     0.00000
+EdgeCount td_edges 8380 bu_edges 1008436 bu_vertices 2016475
+Verification:           PASS
+Verification Time:   0.11064
+   td       3814     0.00003
+    e                0.00001
+   bu     424019     0.00186
+   bu     215880     0.00033
+   bu       1549     0.00091
+    c                0.00020
+   td          5     0.00001
+   td          0     0.00000
+EdgeCount td_edges 5384 bu_edges 1231203 bu_vertices 2070365
+Verification:           PASS
+Verification Time:   0.07274
+   td         41     0.00001
+   td     110074     0.00080
+    e                0.00029
+   bu     512578     0.00094
+   bu      22498     0.00014
+    c                0.00053
+   td         76     0.00007
+   td          0     0.00000
+EdgeCount td_edges 230373 bu_edges 562023 bu_vertices 1364342
+Verification:           PASS
+Verification Time:   0.09416
+   td          1     0.01124
+   td          8     0.00531
+   td      12494     0.00119
+    e                0.00066
+   bu     512288     0.00407
+   bu     119911     0.00390
+   bu        562     0.00088
+    c                0.00020
+   td          3     0.00001
+   td          0     0.00000
+EdgeCount td_edges 15699 bu_edges 852087 bu_vertices 1963729
+Verification:           PASS
+Verification Time:   0.09786
+   td          5     0.00339
+   td       4490     0.00520
+    e                0.00040
+   bu     443523     0.01249
+   bu     195954     0.00067
+   bu       1291     0.00011
+    c                0.00021
+   td          4     0.00001
+   td          0     0.00000
+EdgeCount td_edges 5932 bu_edges 1134517 bu_vertices 2049240
+Verification:           PASS
+Verification Time:   0.07091
+   td         13     0.00001
+   td      40978     0.00032
+    e                0.00008
+   bu     547183     0.00173
+   bu      56880     0.00017
+    c                0.00099
+   td        211     0.00015
+   td          2     0.00001
+   td          0     0.00000
+EdgeCount td_edges 125098 bu_edges 683595 bu_vertices 1467985
+Verification:           PASS
+Verification Time:   0.07249
+   td         11     0.00001
+   td      39042     0.00026
+    e                0.00007
+   bu     546904     0.00124
+   bu      59085     0.00018
+   bu        223     0.00009
+    c                0.00020
+   td          2     0.00001
+   td          0     0.00000
+EdgeCount td_edges 50005 bu_edges 690521 bu_vertices 1875673
+Verification:           PASS
+Verification Time:   0.10799
+   td          2     0.00002
+   td       4889     0.00016
+    e                0.00001
+   bu     446980     0.00228
+   bu     192148     0.00040
+   bu       1244     0.00009
+    c                0.00023
+   td          4     0.00001
+   td          0     0.00000
+EdgeCount td_edges 6345 bu_edges 1119308 bu_vertices 2044944
+Verification:           PASS
+Verification Time:   0.12818
+   td          1     0.01850
+   td         13     0.00352
+   td      51549     0.00624
+    e                0.00688
+   bu     546052     0.01742
+   bu      47464     0.00402
+    c                0.00339
+   td        187     0.00145
+   td          1     0.00593
+   td          0     0.00624
+EdgeCount td_edges 126244 bu_edges 657196 bu_vertices 1447972
+Verification:           PASS
+Verification Time:   0.07533
+   td        400     0.00003
+   td     217694     0.00180
+    e                0.00053
+   bu     418701     0.00976
+   bu       8447     0.00961
+    c                0.00022
+   td         25     0.00007
+   td          0     0.00001
+EdgeCount td_edges 930124 bu_edges 436949 bu_vertices 1242261
+Verification:           PASS
+Verification Time:   0.21382
+   td          1     0.01555
+   td        147     0.00368
+   td     148244     0.01229
+    e                0.00847
+   bu     481620     0.01737
+   bu      15199     0.01077
+    c                0.00564
+   td         56     0.00489
+   td          0     0.00604
+EdgeCount td_edges 415610 bu_edges 514606 bu_vertices 1318746
+Verification:           PASS
+Verification Time:   0.08806
+   td         16     0.00001
+   td      22925     0.00039
+    e                0.00007
+   bu     536554     0.00172
+   bu      85403     0.00024
+   bu        366     0.00011
+    c                0.00020
+   td          3     0.00001
+   td          0     0.00000
+EdgeCount td_edges 28852 bu_edges 758993 bu_vertices 1918391
+Verification:           PASS
+Verification Time:   0.10414
+   td          3     0.00001
+   td       1830     0.00003
+    e                0.00001
+   bu     368953     0.00204
+   bu     271987     0.00038
+   bu       2489     0.00011
+    c                0.00020
+   td          5     0.00017
+   td          0     0.00000
+EdgeCount td_edges 4406 bu_edges 1556252 bu_vertices 2130333
+Verification:           PASS
+Verification Time:   0.10806
+## kron22 bfs_count
+Graph has 4194302 nodes and 64155725 undirected edges for degree: 15
+   td          1     0.01031
+   td         85     0.00883
+   td     187888     0.02436
+    e                0.01026
+   bu    2044961     0.05186
+   bu     161077     0.02927
+    c                0.01571
+   td        628     0.01507
+   td          4     0.00632
+   td          0     0.00237
+EdgeCount td_edges 537150 bu_edges 2950563 bu_vertices 5967693
+Verification:           PASS
+Verification Time:   1.93361
+   td          1     0.02142
+   td       2985     0.00932
+    e                0.00002
+   bu    1168000     0.04850
+   bu    1210483     0.02271
+   bu      13127     0.01572
+    c                0.00626
+   td         48     0.00994
+   td          0     0.00850
+EdgeCount td_edges 16410 bu_edges 13924151 bu_vertices 9027462
+Verification:           PASS
+Verification Time:   1.59990
+   td          3     0.00001
+   td       4071     0.00005
+    e                0.00002
+   bu    1263936     0.01648
+   bu    1115789     0.01976
+   bu      10807     0.00942
+    c                0.00194
+   td         38     0.00536
+   td          0     0.00003
+EdgeCount td_edges 15184 bu_edges 12255750 bu_vertices 8927020
+Verification:           PASS
+Verification Time:   1.17821
+   td          4     0.00001
+   td      19118     0.00029
+    e                0.00005
+   bu    1736155     0.01685
+   bu     635807     0.00825
+   bu       3542     0.00281
+    c                0.00120
+   td         18     0.00007
+   td          0     0.00001
+EdgeCount td_edges 24531 bu_edges 6243911 bu_vertices 8417420
+Verification:           PASS
+Verification Time:   1.00421
+   td          2     0.00059
+   td       9798     0.00077
+    e                0.00060
+   bu    1540429     0.02414
+   bu     838551     0.01279
+   bu       5843     0.00362
+    c                0.00127
+   td         21     0.00140
+   td          0     0.00017
+EdgeCount td_edges 15893 bu_edges 8162861 bu_vertices 8634094
+Verification:           PASS
+Verification Time:   1.53087
+   td          5     0.00786
+   td      32561     0.00044
+    e                0.00012
+   bu    1858196     0.04339
+   bu     501431     0.03769
+   bu       2442     0.02461
+    c                0.00436
+   td          9     0.01157
+   td          0     0.00326
+EdgeCount td_edges 37327 bu_edges 5209970 bu_vertices 8267382
+Verification:           PASS
+Verification Time:   1.34821
+   td        105     0.01000
+   td     203019     0.01610
+    e                0.01152
+   bu    2039771     0.05896
+   bu     151201     0.03193
+    c                0.01615
+   td        545     0.03162
+   td          3     0.01685
+   td          0     0.01429
+EdgeCount td_edges 542378 bu_edges 2881563 bu_vertices 5942583
+Verification:           PASS
+Verification Time:   1.42622
+   td          7     0.00001
+   td      79494     0.00082
+    e                0.00015
+   bu    2007768     0.01362
+   bu     306122     0.01097
+   bu       1247     0.00285
+    c                0.00084
+   td          6     0.00003
+   td          0     0.00000
+EdgeCount td_edges 90677 bu_edges 3872613 bu_vertices 8022742
+Verification:           PASS
+Verification Time:   0.96174
+   td          4     0.00005
+   td      12469     0.00026
+    e                0.00004
+   bu    1605018     0.01509
+   bu     772086     0.00979
+   bu       5048     0.00282
+    c                0.00118
+   td         19     0.00013
+   td          0     0.00000
+EdgeCount td_edges 18280 bu_edges 7655643 bu_vertices 8563362
+Verification:           PASS
+Verification Time:   0.88268
+   td        333     0.01014
+   td     560237     0.01417
+    e                0.01544
+   bu    1783620     0.01403
+   bu      50277     0.00376
+    c                0.00312
+   td        177     0.00402
+   td          0     0.00001
+EdgeCount td_edges 1869274 bu_edges 2025022 bu_vertices 5483842
+Verification:           PASS
+Verification Time:   1.00437
+   td          1     0.00001
+   td       3001     0.00005
+    e                0.00001
+   bu    1168829     0.02164
+   bu    1209715     0.01306
+   bu      13054     0.00364
+    c                0.00082
+   td         44     0.00025
+   td          0     0.00001
+EdgeCount td_edges 16326 bu_edges 12542178 bu_vertices 9026524
+Verification:           PASS
+Verification Time:   1.10224
+   td          1     0.00089
+   td         25     0.00243
+   td      25349     0.00520
+    e                0.00208
+   bu    1804614     0.02441
+   bu     561725     0.00650
+   bu       2913     0.00280
+    c                0.00078
+   td         17     0.00006
+   td          0     0.00000
+EdgeCount td_edges 33404 bu_edges 5695938 bu_vertices 8335825
+Verification:           PASS
+Verification Time:   0.87325
+   td          2     0.00001
+   td       3282     0.00005
+    e                0.00002
+   bu    1201282     0.01916
+   bu    1177826     0.01188
+   bu      12212     0.01011
+    c                0.00116
+   td         40     0.00037
+   td          0     0.00000
+EdgeCount td_edges 15747 bu_edges 12638773 bu_vertices 8992661
+Verification:           PASS
+Verification Time:   0.85182
+   td          2     0.00001
+   td       3066     0.00012
+    e                0.00002
+   bu    1147502     0.01437
+   bu    1230334     0.00919
+   bu      13689     0.00298
+    c                0.00086
+   td         51     0.00022
+   td          0     0.00001
+EdgeCount td_edges 17048 bu_edges 13495779 bu_vertices 9048361
+Verification:           PASS
+Verification Time:   0.88389
+   td          1     0.00001
+   td       9025     0.00012
+    e                0.00002
+   bu    1519328     0.01720
+   bu     860128     0.00807
+   bu       6135     0.00281
+    c                0.00126
+   td         27     0.00011
+   td          0     0.00000
+EdgeCount td_edges 15256 bu_edges 8420654 bu_vertices 8657041
+Verification:           PASS
+Verification Time:   1.11423
+   td         10     0.00001
+   td      28091     0.00034
+    e                0.00007
+   bu    1831626     0.02431
+   bu     532234     0.00954
+   bu       2673     0.00519
+    c                0.00502
+   td         10     0.00177
+   td          0     0.00097
+EdgeCount td_edges 35373 bu_edges 5449665 bu_vertices 8303114
+Verification:           PASS
+Verification Time:   0.99545
+## kron22 bfs_count_relabel
+Graph has 4194302 nodes and 64155725 undirected edges for degree: 15
+   td         30     0.00047
+   td     168806     0.00352
+    e                0.00041
+   bu    2047210     0.00646
+   bu     177944     0.00172
+    c                0.00295
+   td        651     0.00185
+   td          3     0.00001
+   td          0     0.00000
+EdgeCount td_edges 475364 bu_edges 2458150 bu_vertices 6003720
+Verification:           PASS
+Verification Time:   0.52685
+   td          8     0.00001
+   td      48063     0.00054
+    e                0.00015
+   bu    1938874     0.01089
+   bu     405836     0.01486
+   bu       1850     0.00431
+    c                0.00137
+   td         13     0.00120
+   td          0     0.00011
+EdgeCount td_edges 60092 bu_edges 3022851 bu_vertices 8155106
+Verification:           PASS
+Verification Time:   0.45204
+   td        299     0.00002
+   td     468901     0.00402
+    e                0.01070
+   bu    1861768     0.00636
+   bu      63466     0.00286
+    c                0.00242
+   td        208     0.00553
+   td          2     0.00042
+   td          0     0.00078
+EdgeCount td_edges 1416541 bu_edges 1999131 bu_vertices 5588434
+Verification:           PASS
+Verification Time:   0.48769
+   td          4     0.00382
+   td      46379     0.00173
+    e                0.00314
+   bu    1928384     0.01051
+   bu     417945     0.00398
+   bu       1923     0.00580
+    c                0.01024
+   td          9     0.00144
+   td          0     0.00092
+EdgeCount td_edges 53585 bu_edges 3055454 bu_vertices 8169041
+Verification:           PASS
+Verification Time:   0.51982
+   td       3141     0.00005
+    e                0.00001
+   bu    1168182     0.00878
+   bu    1210017     0.00655
+   bu      13251     0.00764
+    c                0.00143
+   td         53     0.00027
+   td          0     0.00003
+EdgeCount td_edges 16679 bu_edges 7146472 bu_vertices 9027099
+Verification:           PASS
+Verification Time:   0.52447
+   td          5     0.00933
+   td      28455     0.00348
+    e                0.01029
+   bu    1826067     0.01188
+   bu     537359     0.00574
+   bu       2746     0.02125
+    c                0.00986
+   td         12     0.00467
+   td          0     0.00611
+EdgeCount td_edges 32568 bu_edges 3397980 bu_vertices 8308030
+Verification:           PASS
+Verification Time:   0.57578
+   td          2     0.00002
+   td       3868     0.00009
+    e                0.00001
+   bu    1265207     0.00734
+   bu    1114795     0.00373
+   bu      10734     0.00132
+    c                0.00122
+   td         38     0.00013
+   td          0     0.00000
+EdgeCount td_edges 14880 bu_edges 6292813 bu_vertices 8926084
+Verification:           PASS
+Verification Time:   0.38750
+   td          4     0.00001
+   td      69822     0.00150
+    e                0.00012
+   bu    1990334     0.00716
+   bu     333099     0.00204
+   bu       1378     0.00110
+    c                0.00085
+   td          7     0.00002
+   td          0     0.00000
+EdgeCount td_edges 73517 bu_edges 2842092 bu_vertices 8059658
+Verification:           PASS
+Verification Time:   0.39560
+   td          2     0.00015
+   td      25566     0.00080
+    e                0.00004
+   bu    1803282     0.00714
+   bu     562869     0.00249
+   bu       2913     0.00113
+    c                0.00079
+   td         12     0.00004
+   td          0     0.00000
+EdgeCount td_edges 28522 bu_edges 3477282 bu_vertices 8336766
+Verification:           PASS
+Verification Time:   0.48865
+   td          2     0.00632
+   td       3270     0.00515
+    e                0.00253
+   bu    1205626     0.01959
+   bu    1173583     0.00807
+   bu      12117     0.01076
+    c                0.00575
+   td         46     0.00281
+   td          0     0.00093
+EdgeCount td_edges 15662 bu_edges 6801092 bu_vertices 8988252
+Verification:           PASS
+Verification Time:   0.44828
+   td         11     0.00002
+   td      16672     0.00034
+    e                0.00004
+   bu    1697154     0.00756
+   bu     676827     0.00286
+   bu       3962     0.00123
+    c                0.00105
+   td         18     0.00006
+   td          0     0.00000
+EdgeCount td_edges 22591 bu_edges 3879057 bu_vertices 8461719
+Verification:           PASS
+Verification Time:   0.42127
+   td          2     0.00524
+   td       9016     0.00024
+    e                0.00002
+   bu    1513766     0.00724
+   bu     865540     0.00322
+   bu       6297     0.00206
+    c                0.00090
+   td         23     0.00011
+   td          0     0.00000
+EdgeCount td_edges 15435 bu_edges 4726230 bu_vertices 8662777
+Verification:           PASS
+Verification Time:   0.40251
+   td          1     0.00001
+   td        310     0.00001
+   td     508420     0.00494
+    e                0.00103
+   bu    1828497     0.01126
+   bu      57217     0.00283
+    c                0.00159
+   td        197     0.00063
+   td          2     0.00001
+   td          0     0.00000
+EdgeCount td_edges 1591056 bu_edges 1952260 bu_vertices 5542643
+Verification:           PASS
+Verification Time:   0.44522
+   td        104     0.00002
+   td     185298     0.00384
+    e                0.00045
+   bu    2045977     0.00675
+   bu     162691     0.00175
+    c                0.00112
+   td        572     0.00080
+   td          2     0.00001
+   td          0     0.00000
+EdgeCount td_edges 550921 bu_edges 2417764 bu_vertices 5971821
+Verification:           PASS
+Verification Time:   0.46786
+   td          2     0.00003
+   td       1081     0.00003
+   td     791807     0.00633
+    e                0.00701
+   bu    1572549     0.00470
+   bu      29100     0.00145
+    c                0.00109
+   td        104     0.00044
+   td          1     0.00015
+   td          0     0.00000
+EdgeCount td_edges 3951542 bu_edges 1635756 bu_vertices 5230273
+Verification:           PASS
+Verification Time:   0.45707
+   td         32     0.00022
+   td      60495     0.00089
+    e                0.00017
+   bu    1975219     0.01020
+   bu     357328     0.00602
+   bu       1564     0.00315
+    c                0.00109
+   td          6     0.00004
+   td          0     0.00000
+EdgeCount td_edges 81649 bu_edges 2902616 bu_vertices 8093556
+Verification:           PASS
+Verification Time:   0.72774
